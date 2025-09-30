@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSC Bellissima - Cruise Ship Information</title>
+    <style>
+        /* Basic CSS for a clean look */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005a9c; /* MSC Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #005a9c;
+        }
+        h2 {
+            border-bottom: 2px solid #005a9c;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            flex-basis: 30%;
+            background-color: #e9f5ff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .section-content ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        .restaurant-item, .entertainment-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #005a9c;
+        }
+        .specialty {
+            font-style: italic;
+            color: #d9534f; /* A distinguishing color for specialty items */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MSC Bellissima</h1>
+        <p>A Modern Marvel at Sea</p>
+    </header>
+
+    <div class="container">
+
+        <section id="basic-info">
+            <h2>Basic Ship Information</h2>
+            <div class="info-box">
+                <div class="info-item"><strong>Class:</strong> Meraviglia-class</div>
+                <div class="info-item"><strong>Gross Tonnage:</strong> 171,598 GT</div>
+                <div class="info-item"><strong>Guests (Max):</strong> Up to 5,686</div>
+                <div class="info-item"><strong>Length:</strong> 316 meters (1,037 ft)</div>
+                <div class="info-item"><strong>Decks:</strong> 18 (15 accessible to guests)</div>
+                <div class="info-item"><strong>Staterooms:</strong> 2,244</div>
+            </div>
+            <p><strong>Key Feature:</strong> Home to the stunning <strong>Galleria Bellissima</strong>, a 314-foot-long Mediterranean-style promenade covered by a spectacular 262-foot LED Sky Screen.</p>
+        </section>
+
+        <section id="restaurants" class="section-content">
+            <h2>Restaurants & Dining</h2>
+            <p>MSC Bellissima offers 10 restaurants, including four main dining rooms and a variety of specialty options.</p>
+
+            <h3>Included Dining</h3>
+            <div class="restaurant-item">
+                <h4>Main Dining Rooms (Posidonia, The Lighthouse, Il Ciliegio, Le Cerisier)</h4>
+                <ul>
+                    <li>Offer a daily changing menu of Mediterranean and International specialties.</li>
+                    <li>Open for Breakfast, Lunch, and Dinner.</li>
+                </ul>
+            </div>
+            <div class="restaurant-item">
+                <h4>Marketplace Buffet (Deck 15)</h4>
+                <ul>
+                    <li>Vast, open-plan buffet with numerous stations, including a glass-fronted mozzarella-making area.</li>
+                    <li>Open for most of the day, offering a casual dining experience.</li>
+                </ul>
+            </div>
+
+            <h3><span class="specialty">Specialty Dining (Additional Charge)</span></h3>
+            <div class="restaurant-item specialty">
+                <h4>Butcher's Cut</h4>
+                <p>Stylish American-style steakhouse featuring superb prime cuts of beef.</p>
+            </div>
+            <div class="restaurant-item specialty">
+                <h4>Kaito Teppanyaki & Sushi Bar</h4>
+                <p>Authentic Japanese cuisine with entertaining Teppanyaki chefs and fresh sushi/sashimi.</p>
+            </div>
+            <div class="restaurant-item specialty">
+                <h4>L'Atelier Bistrot</h4>
+                <p>A charming French bistro offering savory snacks, charcuterie, and classic French dishes.</p>
+            </div>
+            <div class="restaurant-item specialty">
+                <h4>HOLA! Tapas Bar</h4>
+                <p>A casual tapas bar curated by a renowned Spanish chef, Ramón Freixa.</p>
+            </div>
+        </section>
+
+        <section id="entertainment" class="section-content">
+            <h2>Entertainment & Activities</h2>
+            <p>The ship boasts a wide array of activities for all ages, from world-class shows to high-tech games.</p>
+
+            <h3>Shows & Venues</h3>
+            <div class="entertainment-item">
+                <h4>Carousel Productions at Sea (Carousel Lounge)</h4>
+                <p>Exclusive original shows combining acrobatics, dance, and live music, created especially for MSC's Meraviglia-class ships.</p>
+            </div>
+            <div class="entertainment-item">
+                <h4>The London Theatre</h4>
+                <p>A Broadway-style theatre hosting a fabulous program of international production shows.</p>
+            </div>
+            <div class="entertainment-item">
+                <h4>Galleria Bellissima</h4>
+                <p>The main promenade that transforms at night with music, parties, and the spectacular LED Sky Screen shows.</p>
+            </div>
+
+            <h3>Fun & Games</h3>
+            <div class="entertainment-item">
+                <h4>Polar Aquapark</h4>
+                <p>One of the most intricate water parks at sea, featuring three twisting slides, multiple pools, and the exhilarating <strong>Himalayan Bridge</strong> rope course.</p>
+            </div>
+            <div class="entertainment-item">
+                <h4>Sportsplex</h4>
+                <p>Large multi-purpose arena for sports and games during the day, which becomes a dance/party venue at night.</p>
+            </div>
+            <div class="entertainment-item">
+                <h4>Virtual Reality & Arcade</h4>
+                <p>High-tech experiences including an <strong>F1 Simulator</strong>, a <strong>4D Cinema</strong>, and a full-size <strong>Bowling Alley</strong> (additional charge).</p>
+            </div>
+            <div class="entertainment-item">
+                <h4>Kids & Teens Clubs</h4>
+                <p>Dedicated areas and programs for all ages, including partnerships with LEGO® and Chicco®.</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
