@@ -1,167 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSC Bellissima - Cruise Ship Information</title>
+    <title>MSC 榮耀號 - MSC Bellissima</title>
     <style>
-        /* Basic CSS for a clean look */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Times New Roman', Times, serif; /* 歐式風格字體 */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
             color: #333;
         }
-        header {
-            background-color: #005a9c; /* MSC Blue */
+        .header {
+            background-color: #004488; /* 深藍色 - 地中海郵輪主色 */
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        h1, h2, h3 {
-            color: #005a9c;
+        .header h1 {
+            font-family: Garamond, serif;
+            font-size: 2.5em;
+            margin-bottom: 5px;
         }
-        h2 {
-            border-bottom: 2px solid #005a9c;
-            padding-bottom: 5px;
-            margin-top: 30px;
+        .header p {
+            font-size: 1.1em;
+            font-style: italic;
         }
         .container {
-            max-width: 1000px;
+            width: 85%;
             margin: auto;
+            overflow: hidden;
+            padding: 30px 0;
+        }
+        .section {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #ffcc00; /* 金色點綴 */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
-        .info-box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 20px;
+        h2 {
+            color: #004488;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-        .info-item {
-            flex-basis: 30%;
-            background-color: #e9f5ff;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+        h3 {
+            color: #cc0033; /* 義大利紅 */
+            margin-top: 20px;
         }
-        .section-content ul {
-            list-style: disc;
-            margin-left: 20px;
-            padding-left: 0;
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
         }
-        .restaurant-item, .entertainment-item {
+        .info-table th, .info-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px dashed #eee;
+        }
+        .info-table th {
+            background-color: #f2f7ff;
+            width: 35%;
+            font-weight: bold;
+            color: #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #ffffff;
             margin-bottom: 15px;
-            padding-left: 10px;
-            border-left: 3px solid #005a9c;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 6px;
         }
-        .specialty {
-            font-style: italic;
-            color: #d9534f; /* A distinguishing color for specialty items */
+        .feature-list strong {
+            color: #004488;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>MSC Bellissima</h1>
-        <p>A Modern Marvel at Sea</p>
-    </header>
+    <div class="header">
+        <h1>MSC 榮耀號 (MSC Bellissima)</h1>
+        <p>至高無上之美 - 亞洲最大、最新的歐式旗艦郵輪</p>
+    </div>
 
     <div class="container">
+        
+        <div id="basic-info" class="section">
+            <h2>⚓ 船隻基本資訊 (Ship Facts)</h2>
+            <p>MSC 榮耀號是 MSC 地中海郵輪「傳奇級」(Meraviglia Class) 郵輪的第二艘，以其創新的設計和奢華的內裝著稱，為旅客帶來獨特的歐式體驗。</p>
+            
+            <table class="info-table">
+                <tr>
+                    <th>義大利文名稱 (Bellissima)</th>
+                    <td>至高無上之美</td>
+                </tr>
+                <tr>
+                    <th>總噸位 (Gross Tonnage)</th>
+                    <td>171,598 噸</td>
+                </tr>
+                <tr>
+                    <th>總長度 (Length)</th>
+                    <td>約 315.8 公尺 (m)</td>
+                </tr>
+                <tr>
+                    <th>最大載客量 (Max Passenger Capacity)</th>
+                    <td>5,686 人</td>
+                </tr>
+                <tr>
+                    <th>客房總數 (No. of Cabins)</th>
+                    <td>2,217 間</td>
+                </tr>
+                <tr>
+                    <th>特色設計</th>
+                    <td><strong>MSC 榮耀大道 (Galleria Bellissima)</strong>：長達 80 公尺的 LED 天幕長廊，被譽為「海上香榭大道」。</td>
+                </tr>
+                <tr>
+                    <th>專屬貴賓區</th>
+                    <td><strong>地中海遊艇會 (MSC Yacht Club)</strong>：設有專屬套房、私人餐廳、日光甲板和 24 小時管家服務的「船中船」奢華區域。</td>
+                </tr>
+            </table>
+        </div>
 
-        <section id="basic-info">
-            <h2>Basic Ship Information</h2>
-            <div class="info-box">
-                <div class="info-item"><strong>Class:</strong> Meraviglia-class</div>
-                <div class="info-item"><strong>Gross Tonnage:</strong> 171,598 GT</div>
-                <div class="info-item"><strong>Guests (Max):</strong> Up to 5,686</div>
-                <div class="info-item"><strong>Length:</strong> 316 meters (1,037 ft)</div>
-                <div class="info-item"><strong>Decks:</strong> 18 (15 accessible to guests)</div>
-                <div class="info-item"><strong>Staterooms:</strong> 2,244</div>
-            </div>
-            <p><strong>Key Feature:</strong> Home to the stunning <strong>Galleria Bellissima</strong>, a 314-foot-long Mediterranean-style promenade covered by a spectacular 262-foot LED Sky Screen.</p>
-        </section>
+        <div id="restaurants" class="section">
+            <h2>🍽️ 精緻餐飲 - 舌尖環遊世界 (Restaurants & Dining)</h2>
+            <p>船上設有 13 間餐廳與超過 20 種酒吧和酒廊，提供多達 33 種餐飲體驗，從地中海風味到全球特色美食，應有盡有。</p>
 
-        <section id="restaurants" class="section-content">
-            <h2>Restaurants & Dining</h2>
-            <p>MSC Bellissima offers 10 restaurants, including four main dining rooms and a variety of specialty options.</p>
+            <h3>免費主餐廳 (Complimentary Dining)</h3>
+            <ul class="feature-list">
+                <li>
+                    <strong>市集自助餐廳 (Marketplace Buffet) - 15樓</strong>
+                    <br>每日長達 20 小時供應早餐、午餐、下午茶、晚餐和宵夜，設有各式國際與亞洲風味美食，並提供開放式廚房。
+                </li>
+                <li>
+                    <strong>櫻桃餐廳 (Il Ciliegio) / 海王餐廳 (Posidonia) / 燈塔餐廳 (Lighthouse) - 6樓</strong>
+                    <br>三間風格典雅的主餐廳，提供精緻的<strong>歐式套餐</strong>與地中海特色料理，享受高品質的用餐儀式感。
+                </li>
+            </ul>
 
-            <h3>Included Dining</h3>
-            <div class="restaurant-item">
-                <h4>Main Dining Rooms (Posidonia, The Lighthouse, Il Ciliegio, Le Cerisier)</h4>
-                <ul>
-                    <li>Offer a daily changing menu of Mediterranean and International specialties.</li>
-                    <li>Open for Breakfast, Lunch, and Dinner.</li>
-                </ul>
-            </div>
-            <div class="restaurant-item">
-                <h4>Marketplace Buffet (Deck 15)</h4>
-                <ul>
-                    <li>Vast, open-plan buffet with numerous stations, including a glass-fronted mozzarella-making area.</li>
-                    <li>Open for most of the day, offering a casual dining experience.</li>
-                </ul>
-            </div>
+            <h3>付費特色餐廳 (Specialty Dining)</h3>
+            <ul class="feature-list">
+                <li>
+                    <strong>海渡鐵板燒 (Kaito Teppanyaki)</strong>
+                    <br>頂級日式鐵板燒，近距離欣賞大廚的火焰烹飪表演。
+                </li>
+                <li>
+                    <strong>美式牛排屋 (Butcher's Cut Steakhouse)</strong>
+                    <br>主打精選安格斯牛肉及乾式熟成牛排，搭配經典美式配菜。
+                </li>
+                <li>
+                    <strong>海渡壽司吧 (Kaito Sushi Bar) & 海渡日本料理 (Kaito Sushi Restaurant)</strong>
+                    <br>提供新鮮的刺身、壽司和各式日本料理。
+                </li>
+                <li>
+                    <strong>Hola! Tacos Bar</strong>
+                    <br>正宗墨西哥風味餐飲，提供塔可、餡餅等拉丁美洲美食。
+                </li>
+            </ul>
+        </div>
 
-            <h3><span class="specialty">Specialty Dining (Additional Charge)</span></h3>
-            <div class="restaurant-item specialty">
-                <h4>Butcher's Cut</h4>
-                <p>Stylish American-style steakhouse featuring superb prime cuts of beef.</p>
-            </div>
-            <div class="restaurant-item specialty">
-                <h4>Kaito Teppanyaki & Sushi Bar</h4>
-                <p>Authentic Japanese cuisine with entertaining Teppanyaki chefs and fresh sushi/sashimi.</p>
-            </div>
-            <div class="restaurant-item specialty">
-                <h4>L'Atelier Bistrot</h4>
-                <p>A charming French bistro offering savory snacks, charcuterie, and classic French dishes.</p>
-            </div>
-            <div class="restaurant-item specialty">
-                <h4>HOLA! Tapas Bar</h4>
-                <p>A casual tapas bar curated by a renowned Spanish chef, Ramón Freixa.</p>
-            </div>
-        </section>
+        <div id="entertainment" class="section">
+            <h2>🎉 頂級娛樂與休閒 (Entertainment & Activities)</h2>
+            <p>MSC 榮耀號的娛樂設施堪稱業界領先，從世界級劇院表演到刺激的水上樂園，滿足各年齡層的休閒需求。</p>
 
-        <section id="entertainment" class="section-content">
-            <h2>Entertainment & Activities</h2>
-            <p>The ship boasts a wide array of activities for all ages, from world-class shows to high-tech games.</p>
-
-            <h3>Shows & Venues</h3>
-            <div class="entertainment-item">
-                <h4>Carousel Productions at Sea (Carousel Lounge)</h4>
-                <p>Exclusive original shows combining acrobatics, dance, and live music, created especially for MSC's Meraviglia-class ships.</p>
-            </div>
-            <div class="entertainment-item">
-                <h4>The London Theatre</h4>
-                <p>A Broadway-style theatre hosting a fabulous program of international production shows.</p>
-            </div>
-            <div class="entertainment-item">
-                <h4>Galleria Bellissima</h4>
-                <p>The main promenade that transforms at night with music, parties, and the spectacular LED Sky Screen shows.</p>
-            </div>
-
-            <h3>Fun & Games</h3>
-            <div class="entertainment-item">
-                <h4>Polar Aquapark</h4>
-                <p>One of the most intricate water parks at sea, featuring three twisting slides, multiple pools, and the exhilarating <strong>Himalayan Bridge</strong> rope course.</p>
-            </div>
-            <div class="entertainment-item">
-                <h4>Sportsplex</h4>
-                <p>Large multi-purpose arena for sports and games during the day, which becomes a dance/party venue at night.</p>
-            </div>
-            <div class="entertainment-item">
-                <h4>Virtual Reality & Arcade</h4>
-                <p>High-tech experiences including an <strong>F1 Simulator</strong>, a <strong>4D Cinema</strong>, and a full-size <strong>Bowling Alley</strong> (additional charge).</p>
-            </div>
-            <div class="entertainment-item">
-                <h4>Kids & Teens Clubs</h4>
-                <p>Dedicated areas and programs for all ages, including partnerships with LEGO® and Chicco®.</p>
-            </div>
-        </section>
-
+            <ul class="feature-list">
+                <li>
+                    <strong>倫敦大劇院 (London Theatre) - 6/7樓</strong>
+                    <br>媲美百老匯的豪華劇院，每晚上演<strong>世界級的歌舞、特技與魔術主題秀</strong>。
+                </li>
+                <li>
+                    <strong>旋轉木馬劇場 (Carousel Lounge) - 7樓</strong>
+                    <br>獨特的 360° 旋轉舞台，專門為郵輪打造兩部獨家奇幻秀，提供沉浸式的表演體驗。（可能需付費）
+                </li>
+                <li>
+                    <strong>亞利桑那水上樂園 (Arizona Aquapark) - 19樓</strong>
+                    <br>擁有 **3 條酷炫滑水道**、喜馬拉雅橋和多個泳池，是孩子和大人放鬆玩水的首選之地。
+                </li>
+                <li>
+                    <strong>MSC 榮耀大道 (Galleria Bellissima) - 6樓</strong>
+                    <br>80 米 LED 天幕長廊，定時舉辦壯觀的<strong>光影秀</strong>。大道兩旁設有精品店、特色酒吧和甜品店。
+                </li>
+                <li>
+                    <strong>F1 模擬賽車 & XD 互動影院 - 16樓</strong>
+                    <br>逼真的 F1 賽車模擬器和 4D 互動影院，帶來身臨其境的刺激感。（額外收費）
+                </li>
+                <li>
+                    <strong>樂高® 兒童俱樂部 (LEGO® Clubs) - 18樓</strong>
+                    <br>與樂高合作打造的分齡兒童俱樂部，提供專業老師陪同的創意活動和遊戲。
+                </li>
+            </ul>
+        </div>
+        
     </div>
 
 </body>
