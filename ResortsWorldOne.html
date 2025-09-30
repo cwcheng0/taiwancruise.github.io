@@ -1,97 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resorts World One Cruise</title>
+    <title>名勝郵輪壹號 - Resorts World One</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
-            background-color: #004d99; /* Deep Blue - Cruise Theme */
+        .header {
+            background-color: #004d99; /* Resorts World Cruises Blue */
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
-        }
-        nav {
-            background-color: #0073e6; /* Medium Blue */
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: inline-block;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #005bb5; /* Darker Blue on Hover */
         }
         .container {
             width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #004d99;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
         }
         .section {
-            margin-bottom: 30px;
-            padding: 15px;
-            border-left: 5px solid #ff9900; /* Accent Orange */
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00; /* Gold accent */
+            padding-bottom: 10px;
+            margin-top: 0;
         }
         .info-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
         }
         .info-table th, .info-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
+            border-bottom: 1px solid #ddd;
         }
         .info-table th {
-            background-color: #e6f2ff;
+            background-color: #f8f8f8;
             width: 30%;
+            font-weight: bold;
         }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        .feature-list {
+            list-style: none;
+            padding: 0;
         }
-        .dining-option, .entertainment-option {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .dining-option h4, .entertainment-option h4 {
-            margin-top: 0;
-            color: #ff9900;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #004d99;
-            color: white;
-            margin-top: 20px;
+        .feature-list li {
+            background: #e6f0ff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #004d99;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Resorts World One Cruise Ship</h1>
-        <p>Your Floating Resort at Sea</p>
-    </header>
+    <div class="header">
+        <h1>名勝郵輪壹號 (Resorts World One)</h1>
+        <p>亞洲頂級豪華郵輪，為您開啟夢幻海上之旅</p>
+    </div>
 
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href
+    <div class="container">
+        
+        <div id="basic-info" class="section">
+            <h2>🛳️ 船隻基本資訊 (Basic Ship Information)</h2>
+            <p>名勝郵輪壹號以其卓越的速度和豪華的義大利設計空間，為旅客提供獨一無二的五星級郵輪體驗。</p>
+            
+            <table class="info-table">
+                <tr>
+                    <th>總噸位 (Gross Tonnage)</th>
+                    <td>75,338 噸</td>
+                </tr>
+                <tr>
+                    <th>長度 (Length)</th>
+                    <td>268 公尺 (m)</td>
+                </tr>
+                <tr>
+                    <th>載客量 (Passenger Capacity)</th>
+                    <td>1,856 人 (下舖)</td>
+                </tr>
+                <tr>
+                    <th>客房數量 (No. of Cabins)</th>
+                    <td>928 間</td>
+                </tr>
+                <tr>
+                    <th>甲板層數 (No. of Decks)</th>
+                    <td>13 層</td>
+                </tr>
+                <tr>
+                    <th>船中船奢華體驗</th>
+                    <td>**「The Palace 皇宮」**: 豪華套房專區，設有私人設施及 24 小時歐式管家服務。</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="restaurants" class="section">
+            <h2>🍽️ 船上餐飲 - 舌尖上的郵輪 (Restaurants & Dining)</h2>
+            <p>船上匯聚超過 17 種餐飲概念，從免費的亞洲自助餐到收費的高級日本料理和牛排館，滿足您的所有味蕾。</p>
+
+            <h3>免費主餐廳 (Complimentary Dining)</h3>
+            <ul class="feature-list">
+                <li>
+                    **麗都自助及燒烤餐廳 (Lido Buffet & Grill) - 12樓**
+                    <br>提供豐富的**中西式自助餐**和多樣化美食選擇，亦設有戶外燒烤區。
+                </li>
+                <li>
+                    **百味軒 (Pavilion) - 6樓**
+                    <br>獨家免費**中餐餐廳**，提供道地的亞洲美食及粵式點心。
+                </li>
+                <li>
+                    **星夢餐廳 (Dream Dining Room) - 6樓**
+                    <br>提供優雅的用餐環境，供應**中西式套餐**。
+                </li>
+            </ul>
+
+            <h3>付費特色餐廳 (Specialty Dining)</h3>
+            <ul class="feature-list">
+                <li style="border-left-color: #ffcc00;">
+                    **藍湖美食 (Blue Lagoon) - 7樓**: 24小時營業的亞洲風味小吃，隨時滿足
