@@ -1,159 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorer Dream Cruise - Your Voyage Awaits</title>
+    <title>探索夢號 - Explorer Dream</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans TC', 'Microsoft YaHei', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #eef3f6;
+            color: #2c3e50;
         }
-        header {
-            background-color: #004080; /* Deep Blue for a nautical feel */
+        .header {
+            background-color: #007bb5; /* Dream Cruises Blue */
             color: white;
-            padding: 20px 0;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
         }
-        nav {
-            background-color: #0059b3;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #007bff;
+        .header p {
+            font-size: 1.2em;
+            font-style: italic;
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .section {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            border-top: 5px solid #ffaa00; /* Orange/Gold Accent */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #004080;
-            border-bottom: 2px solid #004080;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            color: #007bb5;
+            border-bottom: 2px solid #ffaa00;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-        .info-section p {
-            line-height: 1.6;
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table th, .info-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .info-table th {
+            background-color: #f7f9fb;
+            width: 40%;
+            font-weight: bold;
+            color: #333;
         }
         .feature-list {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         .feature-list li {
-            background: #e6f7ff;
-            margin: 5px 0;
-            padding: 10px;
-            border-left: 5px solid #007bff;
+            background: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 4px solid #007bb5;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
+        .feature-list strong {
+            color: #cc5200;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Explorer Dream Cruise</h1>
-        <p>Your journey to new horizons in Asia Pacific, Australia & New Zealand</p>
-    </header>
-
-    <nav>
-        <a href="#basic-info">Ship Info</a>
-        <a href="#restaurants">Dining</a>
-        <a href="#entertainment">Entertainment</a>
-        <a href="#amenities">Amenities</a>
-    </nav>
+    <div class="header">
+        <h1>🛳️ 探索夢號 (Explorer Dream)</h1>
+        <p>探索亞太的嶄新邊界，感受亞洲好客之道與國際奢華的完美融合</p>
+    </div>
 
     <div class="container">
         
-        <section id="basic-info" class="info-section">
-            <h2>Basic Ship Information</h2>
-            <p><strong>Ship Name:</strong> Explorer Dream</p>
-            <p><strong>Cruise Line:</strong> Dream Cruises (formerly part of the fleet)</p>
-            <p><strong>Gross Tonnage:</strong> 75,338 GT</p>
-            <p><strong>Guest Capacity (Lower Berths):</strong> Approximately 1,850 - 1,852</p>
-            <p><strong>Total Cabins:</strong> 928 - 929</p>
-            <p><strong>Year Launched/Refurbished:</strong> Launched 1999, Extensively Refurbished April 2019</p>
-            <p><strong>Key Features:</strong> Features the exclusive "The Palace" luxury private enclave with suite accommodation and butler service.</p>
-            <p><strong>Cruising Regions:</strong> Known for exploring Asia Pacific, including destinations like Japan, Hong Kong, Vietnam, as well as Australia and New Zealand.</p>
-        </section>
-
-        <section id="restaurants" class="info-section">
-            <h2>Restaurants & Dining</h2>
-            <p>Enjoy a wide array of international and Asian cuisine across 15 restaurants and bars.</p>
+        <div id="basic-info" class="section">
+            <h2>船隻概覽 (Basic Ship Information)</h2>
+            <p>探索夢號是一艘中型豪華郵輪，以其高達 **24 節**的平均航速，被譽為亞太地區最快的郵輪之一。經過耗資 $5400 萬美元的翻新，其設施和客房全面升級。</p>
             
+            <table class="info-table">
+                <tr>
+                    <th>總噸位 (Gross Tonnage)</th>
+                    <td>75,338 噸</td>
+                </tr>
+                <tr>
+                    <th>船身長度 (Overall Length)</th>
+                    <td>約 268.6 公尺 (m)</td>
+                </tr>
+                <tr>
+                    <th>賓客載客量 (Lower Berths)</th>
+                    <td>約 1,856 人</td>
+                </tr>
+                <tr>
+                    <th>客房數量 (No. of Cabins)</th>
+                    <td>約 928 間</td>
+                </tr>
+                <tr>
+                    <th>翻新年份 (Refurbished Year)</th>
+                    <td>2019 年</td>
+                </tr>
+                <tr>
+                    <th>船中船奢華體驗</th>
+                    <td>**「The Palace 皇宮」**: 專屬奢華區，配有私人泳池甲板、餐廳、酒廊和歐式管家服務。</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="restaurants" class="section">
+            <h2>🍽️ 饕餮美食 - 跨越亞洲與國際 (Restaurants & Dining)</h2>
+            <p>船上擁有超過 **15 間**餐廳、酒吧及酒廊，提供融合東西方精髓的豐富餐飲選擇，滿足不同口味的需求。</p>
+
             <ul class="feature-list">
-                <li><strong>Main Dining (Complimentary):</strong> Offers the main dining room experience with varied menus.</li>
-                <li><strong>Lido Buffet:</strong> The international buffet for breakfast, lunch, and dinner.</li>
-                <li><strong>Pavilion:</strong> A complimentary Chinese restaurant (A la carte or small buffet).</li>
-                <li><strong>Specialty Dining (Extra Charge):</strong>
-                    <ul>
-                        <li><strong>Seafood Grill by Mark Best:</strong> Alfresco dining by the acclaimed Australian chef, focusing on seafood and grilled meats.</li>
-                        <li><strong>Mozzarella Ristorante & Pizzeria:</strong> Italian dishes with a Japanese twist.</li>
-                        <li><strong>Blue Lagoon:</strong> 24-hour hawker-style Asian specialties like noodle soups and rice dishes.</li>
-                        <li><strong>Silk Road Chinese Restaurant:</strong> Elegant, fine-dining Chinese cuisine.</li>
-                        <li><strong>Umi Uma:</strong> Japanese restaurant featuring sushi, sashimi, noodles, tempura, and Teppanyaki.</li>
-                        <li><strong>Hot Pot:</strong> Traditional hot pot dining experience.</li>
-                    </ul>
+                <li>
+                    <strong>夢想餐飲廳 (Dream Dining Room) / 麗都自助餐廳 (The Lido)</strong>
+                    <br><strong>免費主餐廳</strong>：提供多樣化的中西式套餐、中式美饌（如 Pavilion）和豐富的國際自助餐，是主要用餐場所。
                 </li>
-                <li><strong>Cafes & Bars:</strong> Lobby Cafe (for specialty coffee and pastries), Little Cake Cafe, The Dream Boutiques (for champagne/whiskey lounges).</li>
+                <li>
+                    <strong>海鮮燒烤餐廳 (Seafood Grill by Mark Best)</strong>
+                    <br>由澳洲名廚 Mark Best 打造的<strong>特色付費餐廳</strong>，提供新鮮海鮮燒烤及精緻料理，通常設有戶外用餐區。
+                </li>
+                <li>
+                    <strong>海馬日式料理及鐵板燒 (Umi Uma)</strong>
+                    <br>結合壽司、刺身和互動式<strong>鐵板燒</strong>的日式付費餐廳，為您帶來一場美食與表演的饗宴。
+                </li>
+                <li>
+                    <strong>火鍋 (Hot Pot)</strong>
+                    <br>提供道地中式火鍋體驗，讓您在海上享受熱騰騰的亞洲圍爐樂趣。（付費）
+                </li>
+                <li>
+                    <strong>藍湖美食 (Blue Lagoon)</strong>
+                    <br>提供亞洲風味小吃和輕食的休閒餐廳，是您享用下午茶或宵夜的好去處。
+                </li>
             </ul>
-        </section>
+        </div>
 
-        <section id="entertainment" class="info-section">
-            <h2>Entertainment & Activities</h2>
-            <p>There's never a dull moment with world-class shows and diverse activities for all ages.</p>
-            
+        <div id="entertainment" class="section">
+            <h2>🎉 精彩娛樂與休閒設施 (Entertainment & Activities)</h2>
+            <p>船上設施完善，從頂級劇院表演到高科技遊戲，讓您在航行中充滿活力與樂趣。</p>
+
             <ul class="feature-list">
-                <li><strong>Zodiac Theatre:</strong> Home to large-scale production shows like the Korean non-verbal performance, **Cookin' NANTA**, and acrobatic shows like **Harmony**.</li>
-                <li><strong>Parthenon Pool Deck:</strong> Roman-themed pool area featuring **Caesar's Slide**, hot tubs, a stage for live bands, and an LED screen.</li>
-                <li><strong>The Zone & ESC Experience Lab:</strong> Area for virtual reality games and other interactive entertainment.</li>
-                <li><strong>Sportsplex:</strong> Facility for games like football and basketball.</li>
-                <li><strong>Nightlife:</strong> Dance under the stars at the onboard nightclub, enjoy live music, or experience a **Silent Disco**.</li>
-                <li><strong>Kids' Programs:</strong> **Little Dreamers Club** with games, workshops, and costume parties for children.</li>
-                <li><strong>Wellness & Shopping:</strong> Crystal Life Spa (one of the largest at sea), Gym, Jogging Track, and **The Dream Boutiques** for luxury retail.</li>
+                <li>
+                    <strong>星空劇院 (Zodiac Theatre)</strong>
+                    <br>豪華的主表演廳，每晚呈現**國際級製作的大型歌舞表演**，匯聚世界各地優秀的表演者。
+                </li>
+                <li>
+                    <strong>羅馬泳池 & 凱撒滑水道 (Parthenon Pool & Caesar's Slide)</strong>
+                    <br>羅馬主題的戶外泳池甲板，設有刺激的**水上滑梯**、按摩浴缸和大型 LED 螢幕，是日間休閒的中心。
+                </li>
+                <li>
+                    <strong>ESC 體驗實驗室 (ESC Experience Lab)</strong>
+                    <br>配備最新虛擬實境 (VR) 和擴增實境 (AR) 科技，提供 **VR 遊戲和模擬賽車**等高科技互動娛樂。（可能需付費）
+                </li>
+                <li>
+                    <strong>健身房與水療中心 (Gym & SPA)</strong>
+                    <br>寬敞的健身中心，配備現代化設施，並設有峇里島風格的 **Crystal Life SPA**，提供一系列舒緩的美容和按摩服務。
+                </li>
+                <li>
+                    <strong>小小夢想家天地 (Little Dreamers Club)</strong>
+                    <br>專為兒童設計的活動中心，提供遊戲、工作坊和主題派對，讓小客人們盡情玩樂。
+                </li>
+                <li>
+                    <strong>運動天地 (Sportsplex)</strong>
+                    <br>多功能體育場，可進行籃球、足球、網球等多種運動，讓您在海上也能保持活力。
+                </li>
             </ul>
-        </section>
-
-        <section id="amenities" class="info-section">
-            <h2>Onboard Amenities</h2>
-            <ul class="feature-list">
-                <li><strong>The Palace:</strong> An exclusive luxury enclave with private suites, pool, restaurant, and butler service.</li>
-                <li><strong>Staterooms:</strong> Impressive array of spacious staterooms, many with private balconies.</li>
-                <li><strong>Casino:</strong> Resorts World At Sea.</li>
-                <li><strong>Other Services:</strong> Reception, Shore Excursions/Cruise Consultant, Clinic, Photo Corner.</li>
-            </ul>
-        </section>
-
+        </div>
+        
     </div>
-
-    <footer>
-        <p>&copy; 2024 Explorer Dream Cruise Information. All rights reserved. Information is based on the ship's operation under Dream Cruises.</p>
-    </footer>
 
 </body>
 </html>
