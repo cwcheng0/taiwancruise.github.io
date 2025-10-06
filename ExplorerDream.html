@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>探索星號郵輪 | Stellar Explorer Cruise</title>
+    <title>探索夢號郵輪 | Explorer Dream Cruise</title>
     <style>
         /* --- Google Font Import --- */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -17,31 +17,31 @@
             font-family: 'Noto Sans TC', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f8f9fa; /* A slightly lighter background */
+            color: #343a40;
+            line-height: 1.7;
         }
 
         /* --- Header & Navigation --- */
         header {
-            background-color: #0a2463;
+            background-color: #003366; /* A classic navy blue */
             color: #ffffff;
             padding: 1.5rem 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         nav {
-            background-color: #1e56a0;
+            background-color: #00509e; /* A complementary blue */
             padding: 0.5rem 0;
         }
 
@@ -64,15 +64,16 @@
         }
 
         nav ul li a:hover {
-            background-color: #d63447;
+            background-color: #ffc107; /* A warm gold for hover */
+            color: #003366;
             border-radius: 5px;
         }
 
         /* --- Hero Section --- */
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/1671646/pexels-photo-1671646.jpeg');
             background-size: cover;
-            background-position: center;
+            background-position: center 30%;
             color: white;
             padding: 6rem 2rem;
             text-align: center;
@@ -90,8 +91,8 @@
         }
 
         .cta-button {
-            background-color: #d63447;
-            color: white;
+            background-color: #ffc107;
+            color: #003366;
             padding: 1rem 2.5rem;
             text-decoration: none;
             border-radius: 50px;
@@ -100,7 +101,7 @@
         }
 
         .cta-button:hover {
-            background-color: #b82a3a;
+            background-color: #ffda77;
             transform: scale(1.05);
         }
 
@@ -115,7 +116,7 @@
             text-align: center;
             font-size: 2.2rem;
             margin-bottom: 3rem;
-            color: #0a2463;
+            color: #003366;
         }
 
         /* --- Grid Layout for Features --- */
@@ -128,14 +129,14 @@
         .feature-card {
             background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
 
         .feature-card img {
@@ -150,12 +151,12 @@
 
         .feature-card h3 {
             margin-top: 0;
-            color: #1e56a0;
+            color: #00509e;
         }
 
         /* --- Footer --- */
         footer {
-            background-color: #0a2463;
+            background-color: #003366;
             color: #e0e0e0;
             text-align: center;
             padding: 2rem;
@@ -179,12 +180,12 @@
 <body>
 
     <header>
-        <h1>探索星號 (Stellar Explorer)</h1>
+        <h1>探索夢號 (Explorer Dream)</h1>
         <nav>
             <ul>
-                <li><a href="#about">關於我們</a></li>
-                <li><a href="#restaurants">船上美食</a></li>
-                <li><a href="#entertainment">娛樂設施</a></li>
+                <li><a href="#about">關於郵輪</a></li>
+                <li><a href="#restaurants">精選餐廳</a></li>
+                <li><a href="#entertainment">船上娛樂</a></li>
                 <li><a href="#booking">立即預訂</a></li>
             </ul>
         </nav>
@@ -192,88 +193,71 @@
 
     <main>
         <section class="hero">
-            <h2>啟航，夢想之旅</h2>
-            <p>歡迎登上探索星號，您的專屬海上星級度假村。讓我們帶您探索世界的奇蹟，享受無與倫比的奢華與服務。</p>
-            <a href="#booking" class="cta-button">查看航程</a>
+            <h2>踏上夢想的航道</h2>
+            <p>歡迎登上探索夢號，一座為探險家打造的海上移動城堡。與我們一同航向未知，發掘旅途中的每一個驚喜。</p>
+            <a href="#booking" class="cta-button">探索我們的航程</a>
         </section>
 
         <section id="about">
-            <h2>關於探索星號</h2>
+            <h2>關於探索夢號</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto;">
-                「探索星號」是最新一代的豪華郵輪，融合了頂尖科技與典雅設計。我們致力於提供最貼心細膩的服務，帶領乘客前往世界上最迷人的目的地。從寬敞舒適的客房到世界級的設施，船上的每一個細節都為您的完美假期而生。
+                「探索夢號」專為熱愛冒險的您而設計，完美結合了舒適的住宿體驗與激動人心的環球目的地。船上設施一應俱全，從國際級的美食饗宴到包羅萬象的娛樂活動，旨在為您的旅程寫下最精彩的篇章。
             </p>
         </section>
 
         <section id="restaurants" style="background-color: #ffffff;">
-            <h2>船上美食 (Restaurants)</h2>
+            <h2>精選餐廳 (Restaurants)</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fine Dining Restaurant">
+                    <img src="https://images.pexels.com/photos/1484674/pexels-photo-1484674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Elegant restaurant">
                     <div class="feature-card-content">
-                        <h3>海珍樓 (The Jade Palace)</h3>
-                        <p>提供精緻的亞洲料理與海鮮盛宴。由名廚主理，在優雅的環境中品嚐東方美食的藝術。</p>
+                        <h3>絲路花舞中餐廳</h3>
+                        <p>品味傳統中式佳餚的現代演繹。主廚團隊嚴選食材，為您呈現一場色香味俱全的東方美食之旅。</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Casual Buffet">
+                    <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="International buffet">
                     <div class="feature-card-content">
-                        <h3>蔚藍地中海餐廳 (Azure Bistro)</h3>
-                        <p>感受地中海的陽光與熱情。提供新鮮的義大利麵、窯烤披薩以及各式地中海風味佳餚。</p>
+                        <h3>麗都自助餐廳</h3>
+                        <p>匯集全球美食的自助盛宴。從新鮮海產到精緻甜點，全天候供應，滿足您挑剔的味蕾。</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grill House">
+                    <img src="https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seafood restaurant">
                     <div class="feature-card-content">
-                        <h3>星空燒烤吧 (Starlight Grill)</h3>
-                        <p>在甲板上享受露天燒烤的樂趣。提供頂級牛排與新鮮海產，伴隨著海風與滿天星斗。</p>
+                        <h3>海馬日本料理</h3>
+                        <p>體驗極致新鮮的壽司與日式鐵板燒。在簡約雅致的環境中，享受來自海洋的純粹美味。</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="entertainment">
-            <h2>娛樂設施 (Entertainment)</h2>
+            <h2>船上娛樂 (Entertainment)</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Theater">
+                    <img src="https://images.pexels.com/photos/1045299/pexels-photo-1045299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Live show theater">
                     <div class="feature-card-content">
-                        <h3>星光大劇院 (Starlight Theatre)</h3>
-                        <p>欣賞百老匯風格的現場表演、音樂會與魔術秀，享受世界級的視聽饗宴。</p>
+                        <h3>星座劇院</h3>
+                        <p>欣賞國際級的舞台製作，包含大型歌舞、特技表演與音樂劇，為您的夜晚增添無限光彩。</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pool Deck">
+                    <img src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Water park on deck">
                     <div class="feature-card-content">
-                        <h3>天際泳池與酒吧 (Skyline Pool & Bar)</h3>
-                        <p>在頂層甲板的無邊際泳池中暢遊，或在池畔酒吧品嚐特色雞尾酒，享受陽光與海景。</p>
+                        <h3>羅馬泳池甲板</h3>
+                        <p>配備戶外泳池、多條滑水道與熱水按摩池。無論是親子同樂或悠閒放鬆，都是您的最佳選擇。</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/3757955/pexels-photo-3757955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Spa Center">
+                    <img src="https://images.pexels.com/photos/3775073/pexels-photo-3775073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gaming arcade">
                     <div class="feature-card-content">
-                        <h3>海洋之心水療中心 (Ocean Heart Spa)</h3>
-                        <p>提供全方位的水療與美容護理服務。在這裡徹底放鬆身心，重煥活力。</p>
+                        <h3>電子遊樂中心</h3>
+                        <p>從經典的街機遊戲到最新的虛擬實境(VR)體驗，為所有年齡層的旅客提供刺激有趣的娛樂時光。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="booking" style="background-color: #1e56a0; color: white;">
-            <h2 style="color: white;">預訂您的夢幻航程</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
-                準備好迎接一場終生難忘的旅行了嗎？立即聯繫我們的旅遊顧問，或點擊下方按鈕查看最新的航程與優惠方案。
-            </p>
-            <div style="text-align: center;">
-                <a href="#" class="cta-button">立即預訂</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 探索星號郵輪 (Stellar Explorer Cruise). All Rights Reserved.</p>
-        <p>僅為範例網站，圖片來源於 Pexels.com</p>
-    </footer>
-
-</body>
-</html>
+        <section id="booking" style="background-color: #00509e; color: white;">
+            <h2 style="color: white;">開啟您的夢想之旅
