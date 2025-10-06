@@ -1,188 +1,308 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>探索夢號 - Explorer Dream</title>
+    <title>麗星郵輪 探索星號 前進菲律賓、越南</title>
     <style>
         body {
-            font-family: 'Noto Sans TC', 'Microsoft YaHei', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eef3f6;
-            color: #2c3e50;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .header {
-            background-color: #007bb5; /* Dream Cruises Blue */
+        header {
+            background-color: #004d99; /* Deep Blue for a maritime feel */
             color: white;
-            padding: 30px;
+            padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        .header h1 {
-            font-size: 2.8em;
-            margin-bottom: 5px;
-            letter-spacing: 2px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        .header p {
-            font-size: 1.2em;
+        header p {
+            margin: 5px 0 0;
             font-style: italic;
         }
+        nav {
+            background-color: #0073e6; /* Lighter Blue */
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #005bb5;
+        }
         .container {
-            width: 85%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px 0;
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        .section {
-            background: white;
-            padding: 25px 30px;
+        section {
             margin-bottom: 30px;
-            border-radius: 12px;
-            border-top: 5px solid #ffaa00; /* Orange/Gold Accent */
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
-        h2 {
-            color: #007bb5;
-            border-bottom: 2px solid #ffaa00;
-            padding-bottom: 10px;
+        section h2 {
+            color: #004d99;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
             margin-top: 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #cc0000; /* Red for attention */
         }
         .info-table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 15px;
         }
         .info-table th, .info-table td {
-            padding: 12px;
+            border: 1px solid #ddd;
+            padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #e0e0e0;
         }
         .info-table th {
-            background-color: #f7f9fb;
-            width: 40%;
-            font-weight: bold;
-            color: #333;
+            background-color: #f2f2f2;
+            width: 30%;
         }
-        .feature-list {
-            list-style: none;
-            padding: 0;
-        }
-        .feature-list li {
-            background: #ffffff;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-left: 4px solid #007bb5;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .feature-list strong {
-            color: #cc5200;
-            font-size: 1.1em;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            font-size: 0.8em;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>🛳️ 探索夢號 (Explorer Dream)</h1>
-        <p>探索亞太的嶄新邊界，感受亞洲好客之道與國際奢華的完美融合</p>
-    </div>
+    <header>
+        <h1>星夢郵輪 探索星號 前進菲律賓、越南</h1>
+        <p>Embark on an Unforgettable Journey Across Asia with StarCruises</p>
+    </header>
+
+    <nav>
+        <a href="#basic-info">基本資料</a>
+        <a href="#staterooms">房型</a>
+        <a href="#restaurants">餐廳</a>
+        <a href="#entertainment">船上娛樂</a>
+		<a href="#offshore">岸上行程</a>
+        <a href="#vegatmeal">素食QA</a>
+    </nav>
 
     <div class="container">
-        
-        <div id="basic-info" class="section">
-            <h2>船隻概覽 (Basic Ship Information)</h2>
-            <p>探索夢號是一艘中型豪華郵輪，以其高達 **24 節**的平均航速，被譽為亞太地區最快的郵輪之一。經過耗資 $5400 萬美元的翻新，其設施和客房全面升級。</p>
-            
+
+        <section id="basic-info">
+            <h2>基本資料</h2>
+            <p>探索星號是<span class="highlight">獅子級(Leo-class cruise ship)</span>的船, 特別針對亞洲台灣人的喜好進行優化; 2019年改名.</p>
+
             <table class="info-table">
                 <tr>
-                    <th>總噸位 (Gross Tonnage)</th>
-                    <td>75,338 噸</td>
+                    <th>母公司</th>
+                    <td>雲頂香港(StarDream Cruises)公司, 母港在新加坡</td>
                 </tr>
                 <tr>
-                    <th>船身長度 (Overall Length)</th>
-                    <td>約 268.6 公尺 (m)</td>
+                    <th>承建商</th>
+                    <td>德國 Meyer Werft</td>
+                </tr>
+				<tr>
+                    <th>噸位</th>
+                    <td>75,338 噸(星夢郵輪旗下最小噸位)</td>
                 </tr>
                 <tr>
-                    <th>賓客載客量 (Lower Berths)</th>
-                    <td>約 1,856 人</td>
+                    <th>下水年代</th>
+                    <td>1999年10月10日</td>
                 </tr>
                 <tr>
-                    <th>客房數量 (No. of Cabins)</th>
-                    <td>約 928 間</td>
+                    <th>長度 / 寬度 / 甲板層</th>
+                    <td>268.6 公尺 / 32.2 公尺/ 13 層 (遊客可到 10 層樓)</td>
                 </tr>
                 <tr>
-                    <th>翻新年份 (Refurbished Year)</th>
-                    <td>2019 年</td>
+                    <th>房間數</th>
+                    <td>928 間</td>
+                </tr>                <tr>
+                    <th>載客量</th>
+                    <td>1,854 (下舖)</td>
                 </tr>
                 <tr>
-                    <th>船中船奢華體驗</th>
-                    <td>**「The Palace 皇宮」**: 專屬奢華區，配有私人泳池甲板、餐廳、酒廊和歐式管家服務。</td>
+                    <th>母港</th>
+                    <td>高雄, 基隆, 新加坡</td>
                 </tr>
+                <tr>
+                    <th>郵輪手冊</th>
+                    <td><a href="https://media.stardreamcruises.com/SNA_Ship-Brochure_TC.pdf">手冊</a></td>
+                </tr>				
+                <tr>
+                    <th>2005~2006郵輪行程</th>
+                    <td><a href="https://media.stardreamcruises.com/SNA_Itinerary_TC.pdf">行程</a></td>
+                </tr>		
+                <tr>
+                    <th>2005~2006郵輪指南</th>
+                    <td><a href="https://media.stardreamcruises.com/SNA_Cruise-Guide_TC.pdf">指南</a></td>
+                </tr>		
+	
+	
             </table>
-        </div>
 
-        <div id="restaurants" class="section">
-            <h2>🍽️ 饕餮美食 - 跨越亞洲與國際 (Restaurants & Dining)</h2>
-            <p>船上擁有超過 **15 間**餐廳、酒吧及酒廊，提供融合東西方精髓的豐富餐飲選擇，滿足不同口味的需求。</p>
-
-            <ul class="feature-list">
-                <li>
-                    <strong>夢想餐飲廳 (Dream Dining Room) / 麗都自助餐廳 (The Lido)</strong>
-                    <br><strong>免費主餐廳</strong>：提供多樣化的中西式套餐、中式美饌（如 Pavilion）和豐富的國際自助餐，是主要用餐場所。
-                </li>
-                <li>
-                    <strong>海鮮燒烤餐廳 (Seafood Grill by Mark Best)</strong>
-                    <br>由澳洲名廚 Mark Best 打造的<strong>特色付費餐廳</strong>，提供新鮮海鮮燒烤及精緻料理，通常設有戶外用餐區。
-                </li>
-                <li>
-                    <strong>海馬日式料理及鐵板燒 (Umi Uma)</strong>
-                    <br>結合壽司、刺身和互動式<strong>鐵板燒</strong>的日式付費餐廳，為您帶來一場美食與表演的饗宴。
-                </li>
-                <li>
-                    <strong>火鍋 (Hot Pot)</strong>
-                    <br>提供道地中式火鍋體驗，讓您在海上享受熱騰騰的亞洲圍爐樂趣。（付費）
-                </li>
-                <li>
-                    <strong>藍湖美食 (Blue Lagoon)</strong>
-                    <br>提供亞洲風味小吃和輕食的休閒餐廳，是您享用下午茶或宵夜的好去處。
-                </li>
+            <h3>2025年11月起航程:</h3>
+            <ul>
+                <li>3天2夜: 高雄 -> 佬沃(Laoag) -> 高雄</li>
+				<li>4天3夜: 基隆 -> 那霸 -> 石垣島 -> 基隆</li>
+                <li>6天5夜: 高雄 -> 佬沃(Laoag) -> 科隆島(Coron) -> 公主港(Puerto Princesa) -> 海上巡遊 ->高雄</li>
+                <li>6天5夜: 高雄 -> 佬沃(Laoag) -> 科隆島(Coron) -> 長灘島(Boracay) -> 海上巡遊 -> 高雄</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="entertainment" class="section">
-            <h2>🎉 精彩娛樂與休閒設施 (Entertainment & Activities)</h2>
-            <p>船上設施完善，從頂級劇院表演到高科技遊戲，讓您在航行中充滿活力與樂趣。</p>
-
-            <ul class="feature-list">
-                <li>
-                    <strong>星空劇院 (Zodiac Theatre)</strong>
-                    <br>豪華的主表演廳，每晚呈現**國際級製作的大型歌舞表演**，匯聚世界各地優秀的表演者。
-                </li>
-                <li>
-                    <strong>羅馬泳池 & 凱撒滑水道 (Parthenon Pool & Caesar's Slide)</strong>
-                    <br>羅馬主題的戶外泳池甲板，設有刺激的**水上滑梯**、按摩浴缸和大型 LED 螢幕，是日間休閒的中心。
-                </li>
-                <li>
-                    <strong>ESC 體驗實驗室 (ESC Experience Lab)</strong>
-                    <br>配備最新虛擬實境 (VR) 和擴增實境 (AR) 科技，提供 **VR 遊戲和模擬賽車**等高科技互動娛樂。（可能需付費）
-                </li>
-                <li>
-                    <strong>健身房與水療中心 (Gym & SPA)</strong>
-                    <br>寬敞的健身中心，配備現代化設施，並設有峇里島風格的 **Crystal Life SPA**，提供一系列舒緩的美容和按摩服務。
-                </li>
-                <li>
-                    <strong>小小夢想家天地 (Little Dreamers Club)</strong>
-                    <br>專為兒童設計的活動中心，提供遊戲、工作坊和主題派對，讓小客人們盡情玩樂。
-                </li>
-                <li>
-                    <strong>運動天地 (Sportsplex)</strong>
-                    <br>多功能體育場，可進行籃球、足球、網球等多種運動，讓您在海上也能保持活力。
-                </li>
+        <section id="staterooms">
+            <h2>房型</h2>
+            <p>根據您的預算及喜好選擇房型</p>
+            <ul>
+                <li><strong>內側客房 ISS/ISA:</strong> 12平方公尺, 樓層：第4.5.6.8.9.10.11層, 一張雙人床+一張單人沙發床/兩張單人床+一張單人壁櫃床+一張沙發床(2~4人)</li>
+                <li><strong>海景客房 OSS:</strong> 13平方公尺, 樓層：第4.5.6.8.9.10層, 一張雙人床/兩張單人床/兩張單人床+一張壁櫃床+一張單人沙發床/一張雙人床+一張單人沙發床(2~4人)</li>
+                <li><strong>露台客房 BSS:</strong> 18+平方公尺, 樓層：第9.10.11層, 兩張單人床+一張雙人沙發床(4人)</li>
+                <li><strong>皇宮套房 DPS:</strong> 21平方公尺, 樓層：第9.10.11層, 一張加大雙人床+一張雙人沙發床(4人)</li>
+                <li><strong>皇宮豪華套房 DDS:</strong> 37平方公尺, 樓層：第9.10.11層, 一張加大雙人床+一張雙人沙發床(4人)</li>
+                <li><strong>皇宮庭苑別墅 DPV:</strong> 奢華管家服務, 93.85平方公尺, 樓層：第11層甲板, 一張加大雙人床+一張雙人床+一張雙人沙發床(6人)</li>
             </ul>
-        </div>
-        
+        </section>
+
+        <section id="restaurants">
+            <h2>免費餐廳 及 付費餐廳</h2>
+            <p>有國際級亞洲美食</p>
+            <ul>
+                <li><strong>星夢餐廳 The Pavilion(免費餐廳,6F):</strong> 中式料理、港式點心為主</li>
+                <li><strong>百味軒(免費餐廳,6F船中):</strong> 西式料理</li>
+                <li><strong>麗都自助及燒烤餐廳(免費餐廳,12F船尾):</strong> 供應中西式國際美食</li>
+				<li><strong>麵包工坊,7F:</strong> NA</li>	
+                <li><strong>義大利披薩餐廳,7F船中:</strong> 義式</li>
+                <li><strong>絲路花舞中餐廳,7F船中:</strong> 港式點心和粵式料理</li>
+                <li><strong>甜品匯 The Little Cake Café,7F船中:</strong> 精緻蛋糕與巧克力甜點</li>
+                <li><strong>抹茶坊,7F:</strong> 抹茶冰淇淋和台灣珍珠奶茶</li>
+				<li><strong>大廳咖啡,7F:</strong> NA</li>	
+				<li><strong>藍湖美食,7F船中:</strong> 世界各地的經典美味小吃</li>
+				<li><strong>海馬日本料理,8F船中:</strong> 日式</li>
+				<li><strong>火鍋,8F船尾:</strong> 麵食搭配多樣的飲品</li>
+                <li><strong>棕櫚閣,12F:</strong> 購買香檳</li>		
+                <li><strong>義式手作冰品,12F:</strong> 義式經典牛奶、冰淇淋、健康美味的脱脂優格冰淇淋</li>	
+				<li><strong>海鮮燒烤餐廳,13F船頭:</strong> 各式肉品、海鮮或蔬菜</li>				
+                <li><strong>露天吧,13F:</strong> 戶外</li>
+												
+                <li><strong>皇宮餐廳:</strong> Exclusive dining for Palace guests.</li>
+                <li><span class="highlight">Halal-Certified Meals:</span> 只有少數航次提供</li>
+            </ul>
+        </section>
+
+        <section id="entertainment">
+            <h2>船上娛樂設施</h2>
+            <p>適合各式年齡層的設施</p>
+            <ul>
+                <li><strong>接待處 Front Desk,7F:</strong> 所有事項</li>
+                <li><strong>醫務室 Clinic,4F:</strong> 醫務</li>
+				
+				<li><strong>星座劇場 Zodiac Theatre,7F船尾:</strong> 現場表演的地方</li>
+                <li><strong>麻將廳,7F船中:</strong> 打麻將</li>
+                <li><strong>悠間大道,7F:</strong> </li>
+				
+				<li><strong>國際廳,8F:</strong> </li>
+				<li><strong>尊尚廳,8F:</strong> </li>				
+				<li><strong>星空廊 The Boutiques,8F船中:</strong> 免稅品</li>
+				
+				<li><strong>雲頂俱樂部,10F:</strong> </li>
+				
+				<li><strong>羅馬泳池及日光甲板 Parthenon Pool,12F船中:</strong> 主要的戶外游泳池</li>
+                <li><strong>「凱撒」滑水梯 Caesar's Slide,12F:</strong> 滑水道</li>
+                <li><strong>VR探索館,12F船頭:</strong> 打電動 VR</li>
+                <li><strong>健身中心 Sportsplex & Gym, 12F船頭:</strong> 24小時健身房</li>
+                <li><strong>水療中心 The Spa & Salon,12F船頭:</strong> 按摩 SPA 水療</li>
+                <li><strong>美髮沙龍,12F船頭:</strong> 洗頭髮</li>		
+                <li><strong>動感地帶,12F船頭:</strong> </li>
+                <li><strong>寫真廊,12F:</strong> </li>
+				<li><strong>精品館,12F:</strong> </li>
+				<li><strong>醇夢雪茄廊,12F:</strong> 提供古巴雪茄及其他名貴品種，並可搭配威士忌、干邑、葡萄酒、波特酒等飲品</li>
+				
+				<li><strong>綜合運動場/緩跑徑,13F:</strong> 在戶外</li>
+                <li><strong>小小夢想家天地 Little Dreamers Club,13F船頭:</strong> 小朋友的遊戲區</li>
+				<li><strong>主題之夜,7F:</strong> 有些航程有</li>
+				<li><strong>本期娛樂活動:</strong> <a href="https://stardreamcruises.com/tc-tw/experiences/events">官網連結</a></li>
+				
+            </ul>
+        </section>
+
+
+        <section id="Philoffshore">
+            <h2>菲律賓岸上行程</h2>
+            <p>可以參加遊輪公司的或自行聯繫當地合法旅遊業者</p>
+            <ul>
+                <li><strong>佬沃(Laoag,Port Of Laoag):</strong> <a href="/doc/Phil/Laoag.pdf">官網連結岸上觀光行程及價格表-菲律賓佬沃</a></li>
+                <li><strong>科隆島(Coron,Port Of Coron):</strong> <a href="/doc/Phil/Coron.pdf">官網連結岸上觀光行程及價格表-菲律賓科隆島</a></li>
+                <li><strong>公主港(Puerto Princesa,Port Of Puerto Princesa):</strong> <a href="/doc/Phil/uertoPrincesa.pdf">官網連結岸上觀光行程及價格表-菲律賓公主港</a></li>
+                <li><strong>長灘島(Boracay, Cagban Jetty Port):</strong> <a href="/doc/Phil/Boracay.pdf">官網連結岸上觀光行程及價格表-菲律賓長灘島</a></li>
+				<li>菲律賓地接業者推薦:Blue Horizons Marites Santiago <a href="mailto:maritess.santiago@bluehorizons.travel">maritess.santiago@bluehorizons.travel</a></li>
+				<li>菲律賓地接業者推薦:B&C Island Leisure Tours Claribel D Casimero <a href="mailto:clacasimero@gmail.com">clacasimero@gmail.com</a></li>
+				<li>菲律賓地接業者推薦:Edures Travel Jhyra Romero <a href="mailto:edruestravelandtours@gmail.com">edruestravelandtours@gmail.com</a></li>
+				<li>菲律賓地接業者推薦:Updr Eamer Travel Johanna M Insuriga <a href="mailto:johannainsauriga@yahoo.com">johannainsauriga@yahoo.com</a></li>
+            </ul>
+        </section>
+
+        <section id="Vietoffshore">
+            <h2>越南岸上行程</h2>
+            <p>可以參加遊輪公司的或自行聯繫當地合法旅遊業者</p>
+            <ul>
+                <li><strong>下龍灣(Ha Long,Ha Long International Cruise Port):</strong> <a href="/doc/Viet/HaLong.pdf">岸上觀光行程及價格表-越南下龍灣</a></li>
+                <li><strong>峴港(Tien Sa,Tien Sa Port):</strong> <a href="/doc/Viet/TienSa.pdf">岸上觀光行程及價格表-越南峴港</a></li>
+				<li>越南地接業者推薦:Blue Horizons Marites Santiago <a href="mailto:maritess.santiago@bluehorizons.travel">maritess.santiago@bluehorizons.travel</a></li>
+				<li>越南地接業者推薦:B&C Island Leisure Tours Claribel D Casimero <a href="mailto:clacasimero@gmail.com">clacasimero@gmail.com</a></li>
+				<li>越南地接業者推薦:Edures Travel Jhyra Romero <a href="mailto:edruestravelandtours@gmail.com">edruestravelandtours@gmail.com</a></li>
+				<li>越南地接業者推薦:Updr Eamer Travel Johanna M Insuriga <a href="mailto:johannainsauriga@yahoo.com">johannainsauriga@yahoo.com</a></li>
+            </ul>
+        </section>
+		
+        <section id="Vegatmeal">
+            <h2>素食QA</h2>
+            <p>亞洲餐廳一定會有素食區</p>
+            <ul>
+                <li>素食區在付費的麗都餐廳都有</li>
+                <li>如果開航到馬來西亞或印尼,會有穆斯林的哈拉美食</li>
+                <li>出發前會有詳細電子版的旅遊指南</li>
+				<li><a href="https://www.meco.org.tw/services/visa-services/electronic-travel-authorization-">菲律賓 ETA</a></li>				
+                <li><a href="https://evisa.gov.vn/">越南電子簽證 e-Visa</a></li>
+                <li>行李限重:2件共50公斤</li>
+				<li>登船:晚上9點出發的,6點開始登船,8點關門</li>
+				<li>攜帶護照+信用卡+護照影本+船票+常備藥物;離船前一晚或離船前3小時到櫃台信用卡結帳</li>
+				<li>插座:220~240V兩個中式插座+英式+USB</li>
+				<li>自備盥洗用具;不可帶酒精類飲料</li>
+				<li>船上標價都是新台幣</li>
+				<li>郵輪服務費:$600內側海景;$800露台;$1,000皇宮</li>
+				<li>開航前舉行全船救生演習</li>
+				<li>入境國的第一個港口須辦理入境手續,否則之後的港口都不能入境</li>
+
+            </ul>
+        </section>
+
     </div>
 
+    <footer>
+        <p>&copy; 2025 StarCruises - Information based on available data and subject to change by the cruise line.</p>
+    </footer>
+
 </body>
+
 </html>
