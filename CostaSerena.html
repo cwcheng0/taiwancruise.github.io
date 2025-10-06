@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌詩達郵輪 莎倫娜號 | 海上古羅馬之旅</title>
+    <style>
+        /* --- Basic Styles --- */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #003366; /* Costa's dark blue */
+        }
+
+        h2 {
+            border-bottom: 2px solid #f2c75c; /* Costa's gold */
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* --- Header --- */
+        .header {
+            background: #003366;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            background-image: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://via.placeholder.com/1200x400.png?text=Costa+Serena+at+Sea'); /* Placeholder - Replace with a real ship image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #f2c75c;
+            margin-top: 10px;
+        }
+
+        /* --- Navigation --- */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #003366;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar li a:hover {
+            background-color: #f2c75c;
+            color: #003366;
+        }
+
+        /* --- Section Styling --- */
+        .section {
+            padding: 40px 0;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* --- Basic Info Section --- */
+        .ship-facts ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .ship-facts li {
+            background: #eef2f5;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #003366;
+        }
+        .ship-facts strong {
+            color: #003366;
+        }
+        
+        /* --- Footer --- */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .navbar ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>歌詩達郵輪 莎倫娜號</h1>
+        <p>Costa Serena - 您的海上古羅馬宮殿</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">關於莎倫娜號</a></li>
+            <li><a href="#restaurants">精選餐廳</a></li>
+            <li><a href="#entertainment">娛樂設施</a></li>
+            <li><a href="#contact">預訂資訊</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section id="about" class="section">
+            <h2>關於莎倫娜號：海上神話之旅</h2>
+            <div class="section-intro">
+                <p>歌詩達莎倫娜號的設計靈感源自古羅馬及希臘神話，船上處處可見眾神的蹤跡。從氣勢輝煌的「萬神殿大堂」到金碧輝煌的劇院與水療中心，每一個角落都充滿濃厚的藝術氣息，讓您彷彿置身於一座漂浮於海上的神話宮殿。</p>
+            </div>
+            <img src="https://via.placeholder.com/1100x500.png?text=Spectacular+Atrium+of+Costa+Serena" alt="歌詩達莎倫娜號富麗堂皇的中庭" style="margin-bottom: 30px;">
+            
+            <h3>郵輪檔案</h3>
+            <div class="ship-facts">
+                <ul>
+                    <li><strong>總噸位：</strong> 114,500 噸</li>
+                    <li><strong>載客量：</strong> 約 3,780 位</li>
+                    <li><strong>甲板樓層：</strong> 14 層</li>
+                    <li><strong>首航年份：</strong> 2007 年</li>
+                    <li><strong>設計靈感：</strong> 古羅馬神話</li>
+                    <li><strong>主要特色：</strong> Samsara 水療中心、天幕泳池、萬神殿大劇院</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="restaurants" class="section">
+            <h2>味蕾盛宴：精選餐廳與酒吧</h2>
+            <div class="section-intro">
+                <p>從免費的國際美食自助餐到頂級的付費特色餐廳，莎倫娜號提供多樣化的餐飲選擇，滿足您挑剔的味蕾。無論是家庭聚餐還是浪漫約會，都能找到最適合的用餐地點。</p>
+            </div>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Main+Dining+Room" alt="瑟瑞斯 & 維斯塔主餐廳">
+                    <div class="card-content">
+                        <h3>瑟瑞斯 & 維斯塔主餐廳</h3>
+                        <p>跨越兩層的宏偉主餐廳，提供每日更換的菜單，包含精緻的義大利料理與國際美食。這是包含在船票費用中的主要用餐選擇。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                     <img src="https://via.placeholder.com/400x250.png?text=Buffet+Restaurant" alt="波羅馬特自助餐廳">
+                    <div class="card-content">
+                        <h3>波羅馬特自助餐廳</h3>
+                        <p>提供從早到晚的休閒餐飲服務，菜色豐富多樣，包含沙拉、披薩、義大利麵、亞洲美食及甜點，是享受輕鬆一餐的絕佳去處。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                     <img src="https://via.placeholder.com/400x250.png?text=Specialty+Restaurant" alt="特色付費餐廳">
+                    <div class="card-content">
+                        <h3>特色付費餐廳 (例如牛排館)</h3>
+                        <p>若想體驗更頂級的饗宴，可預訂船上的特色餐廳（需額外付費）。品嚐頂級牛排或正宗義式料理，享受更私密、奢華的用餐氛圍。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entertainment" class="section">
+            <h2>精彩紛呈：娛樂與休閒設施</h2>
+            <div class="section-intro">
+                <p>動靜皆宜的娛樂設施讓您的海上假期絕不無聊。從百老匯級別的表演、刺激的水上滑道，到能讓身心完全放鬆的水療中心，莎倫娜號為所有年齡層的旅客準備了無盡的樂趣。</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Grand+Theatre" alt="萬神殿大劇院">
+                    <div class="card-content">
+                        <h3>萬神殿大劇院</h3>
+                        <p>橫跨三層甲板的華麗劇院，每晚都有國際級的精彩表演，包括歌舞、魔術、雜技等，為您帶來震撼的視聽盛宴。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Pool+Deck+with+Slide" alt="甲板泳池與滑水道">
+                    <div class="card-content">
+                        <h3>甲板泳池與滑水道</h3>
+                        <p>船上設有多個泳池，其中包含一個帶有巨型玻璃穹頂的泳池，無論晴雨都能暢遊。刺激的水上滑道更是孩子們的最愛。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Samsara+Spa" alt="Samsara 水療中心">
+                    <div class="card-content">
+                        <h3>Samsara 水療中心</h3>
+                        <p>佔地廣闊的頂級水療中心，提供海水按摩池、桑拿、土耳其浴以及多種美容護理療程，是您放鬆身心的絕佳聖地（部分設施需付費）。</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Kids+Club" alt="思高兒童俱樂部">
+                    <div class="card-content">
+                        <h3>思高兒童俱樂部 (Squok Club)</h3>
+                        <p>為不同年齡段的兒童提供專屬的活動空間與專人看管的娛樂項目，讓孩子們盡情玩樂，父母也能享受悠閒的兩人時光。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section" style="text-align:center;">
+             <h2>立即預訂您的海上假期</h2>
+             <p>準備好登上莎倫娜號，開啟一段難忘的古羅馬神話之旅了嗎？</p>
+             <a href="#" style="display: inline-block; background-color: #f2c75c; color: #003366; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em;">查詢航程與價格</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 歌詩達郵輪資訊頁面. 本頁面僅為範例設計。</p>
+    </footer>
+
+</body>
+</html>
