@@ -1,263 +1,192 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>探索夢號郵輪 | Explorer Dream Cruise</title>
+    <title>探索夢號郵輪介紹 Explorer Dream</title>
     <style>
-        /* --- Google Font Import --- */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
-        /* --- Global Styles --- */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa; /* A slightly lighter background */
-            color: #343a40;
-            line-height: 1.7;
-        }
-
-        /* --- Header & Navigation --- */
-        header {
-            background-color: #003366; /* A classic navy blue */
-            color: #ffffff;
-            padding: 1.5rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-
-        nav {
-            background-color: #00509e; /* A complementary blue */
-            padding: 0.5rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            display: block;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #ffc107; /* A warm gold for hover */
-            color: #003366;
-            border-radius: 5px;
-        }
-
-        /* --- Hero Section --- */
-        .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/1671646/pexels-photo-1671646.jpeg');
-            background-size: cover;
-            background-position: center 30%;
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-        }
-
-        .cta-button {
-            background-color: #ffc107;
-            color: #003366;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #ffda77;
-            transform: scale(1.05);
-        }
-
-        /* --- Content Sections --- */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
-            color: #003366;
-        }
-
-        /* --- Grid Layout for Features --- */
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-
-        .feature-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .feature-card-content {
-            padding: 1.5rem;
-        }
-
-        .feature-card h3 {
-            margin-top: 0;
-            color: #00509e;
-        }
-
-        /* --- Footer --- */
-        footer {
-            background-color: #003366;
-            color: #e0e0e0;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        /* --- Responsive Adjustments --- */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .hero h2 {
-                font-size: 2.5rem;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+        body { font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; }
+        header { background-color: #004a77; color: white; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        nav { background-color: #0066a1; text-align: center; padding: 10px 0; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; display: inline-block; transition: background-color 0.3s; }
+        nav a:hover { background-color: #003355; }
+        .container { width: 90%; margin: auto; overflow: hidden; padding: 20px 0; }
+        section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #004a77; border-bottom: 3px solid #0066a1; padding-bottom: 10px; margin-top: 0; }
+        .data-list { list-style: none; padding: 0; }
+        .data-list li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+        .data-list li::before { content: '•'; color: #0066a1; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+        .qa-item { margin-bottom: 15px; border-left: 5px solid #0066a1; padding-left: 15px; }
+        .qa-item strong { color: #004a77; display: block; margin-bottom: 5px; }
+        .room-type, .restaurant-item, .facility-item, .shore-excursion { margin-bottom: 20px; padding: 15px; border: 1px dashed #ccc; border-radius: 4px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>探索夢號 (Explorer Dream)</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">關於郵輪</a></li>
-                <li><a href="#restaurants">精選餐廳</a></li>
-                <li><a href="#entertainment">船上娛樂</a></li>
-                <li><a href="#booking">立即預訂</a></li>
-            </ul>
-        </nav>
+        <h1>探索夢號 Explorer Dream</h1>
+        <p>夢想家的探索精神，帶您暢遊更廣闊的遠海領域。</p>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>踏上夢想的航道</h2>
-            <p>歡迎登上探索夢號，一座為探險家打造的海上移動城堡。與我們一同航向未知，發掘旅途中的每一個驚喜。</p>
-            <a href="#booking" class="cta-button">探索我們的航程</a>
+    <nav>
+        <a href="#info">基本資料</a>
+        <a href="#rooms">房型</a>
+        <a href="#dining">餐廳</a>
+        <a href="#entertainment">船上娛樂設施</a>
+        <a href="#shore">岸上行程</a>
+        <a href="#qa">QA</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="info">
+            <h2>基本資料</h2>
+            <ul class="data-list">
+                <li>**總噸位 (Gross Tonnage):** 75,338 噸</li>
+                <li>**長度 (Length):** 約 268 公尺</li>
+                <li>**寬度 (Width):** 約 32 公尺</li>
+                <li>**載客量 (Passenger Capacity):** 約 1,856 人 (以雙人入住計算)</li>
+                <li>**甲板層數 (Decks):** 13 層</li>
+                <li>**客艙數量 (Cabins):** 928 間</li>
+                <li>**所屬公司:** 麗星郵輪 (Star Cruises) / 名勝世界郵輪 (Resorts World Cruises) (視航線與營運者調整)</li>
+            </ul>
+            <p>探索夢號以精緻海上空間和國際級表演/美食聞名，為旅客帶來頂級的亞洲式服務與歐式情調。</p>
         </section>
 
-        <section id="about">
-            <h2>關於探索夢號</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
-                「探索夢號」專為熱愛冒險的您而設計，完美結合了舒適的住宿體驗與激動人心的環球目的地。船上設施一應俱全，從國際級的美食饗宴到包羅萬象的娛樂活動，旨在為您的旅程寫下最精彩的篇章。
-            </p>
+        <section id="rooms">
+            <h2>房型介紹</h2>
+            <p>探索夢號提供多樣化的客房選擇，從經濟實惠的內側客房到頂級奢華的「皇宮」套房。</p>
+
+            <div class="room-type">
+                <h3>內側客房 (Inside Stateroom)</h3>
+                <p>位於船體內部，無對外窗。是最經濟實惠的選擇。面積約 12-20 平方米。</p>
+            </div>
+
+            <div class="room-type">
+                <h3>海景客房/舷窗客房 (Oceanview Stateroom)</h3>
+                <p>設有對外窗（可能是圓形舷窗或方形大窗），可欣賞海景，但無法開啟。面積約 13-20 平方米。</p>
+            </div>
+
+            <div class="room-type">
+                <h3>露台客房 (Balcony Stateroom)</h3>
+                <p>配有專屬私人陽台，可隨時感受海風、欣賞海景。是郵輪旅遊中最受歡迎的房型。面積約 18-20 平方米。</p>
+            </div>
+
+            <div class="room-type">
+                <h3>皇宮套房 (The Palace Suites)</h3>
+                <p>頂級「船中船」概念的奢華套房系列，提供專屬管家服務、私人泳池、餐廳等多項全包式禮遇。包括皇宮套房、行政套房、庭苑別墅等不同等級。</p>
+            </div>
         </section>
 
-        <section id="restaurants" style="background-color: #ffffff;">
-            <h2>精選餐廳 (Restaurants)</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/1484674/pexels-photo-1484674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Elegant restaurant">
-                    <div class="feature-card-content">
-                        <h3>絲路花舞中餐廳</h3>
-                        <p>品味傳統中式佳餚的現代演繹。主廚團隊嚴選食材，為您呈現一場色香味俱全的東方美食之旅。</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="International buffet">
-                    <div class="feature-card-content">
-                        <h3>麗都自助餐廳</h3>
-                        <p>匯集全球美食的自助盛宴。從新鮮海產到精緻甜點，全天候供應，滿足您挑剔的味蕾。</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seafood restaurant">
-                    <div class="feature-card-content">
-                        <h3>海馬日本料理</h3>
-                        <p>體驗極致新鮮的壽司與日式鐵板燒。在簡約雅致的環境中，享受來自海洋的純粹美味。</p>
-                    </div>
-                </div>
+        <section id="dining">
+            <h2>船上餐廳</h2>
+            <p>船上擁有豐富多元的餐飲選擇，包含免費餐廳（餐費已含）與特色付費餐廳（需額外付費或使用餐券）。</p>
+
+            <h3>免費餐廳 (Free Dining)</h3>
+            <div class="restaurant-item">
+                <h4>麗都自助餐廳 (Lido Buffet)</h4>
+                <p>國際美食自助餐，供應中西式早、午、晚餐及宵夜，選擇豐富。</p>
+            </div>
+            <div class="restaurant-item">
+                <h4>星夢餐廳 (Dream Dining Room) / 百味軒</h4>
+                <p>主打中式或西式套餐/單點料理，環境優雅，通常是正餐時段的主要用餐地點。</p>
+            </div>
+
+            <h3>特色付費餐廳 (Specialty Dining)</h3>
+            <div class="restaurant-item">
+                <h4>絲路花舞中餐廳 (Silk Road & Flowers Chinese Restaurant)</h4>
+                <p>提供精緻中式料理、港式點心，以烤鴨等特色菜聞名，建議提早預訂。</p>
+            </div>
+            <div class="restaurant-item">
+                <h4>海馬日本料理/鐵板燒 (Umi Uma Japanese Restaurant)</h4>
+                <p>提供道地日式料理、壽司與精彩的鐵板燒表演秀。</p>
+            </div>
+            <div class="restaurant-item">
+                <h4>星宴 (Steakhouse) / 戶外火鍋</h4>
+                <p>提供頂級牛排或海鮮燒烤，部分航次提供戶外火鍋，享受海風下的美食體驗。</p>
             </div>
         </section>
 
         <section id="entertainment">
-            <h2>船上娛樂 (Entertainment)</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/1045299/pexels-photo-1045299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Live show theater">
-                    <div class="feature-card-content">
-                        <h3>星座劇院</h3>
-                        <p>欣賞國際級的舞台製作，包含大型歌舞、特技表演與音樂劇，為您的夜晚增添無限光彩。</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Water park on deck">
-                    <div class="feature-card-content">
-                        <h3>羅馬泳池甲板</h3>
-                        <p>配備戶外泳池、多條滑水道與熱水按摩池。無論是親子同樂或悠閒放鬆，都是您的最佳選擇。</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.pexels.com/photos/3775073/pexels-photo-3775073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gaming arcade">
-                    <div class="feature-card-content">
-                        <h3>電子遊樂中心</h3>
-                        <p>從經典的街機遊戲到最新的虛擬實境(VR)體驗，為所有年齡層的旅客提供刺激有趣的娛樂時光。</p>
-                    </div>
-                </div>
+            <h2>船上娛樂設施</h2>
+            <p>從休閒放鬆到刺激活動，探索夢號提供適合各年齡層的設施和活動。</p>
+
+            <div class="facility-item">
+                <h4>⭐ 星座劇院 (Zodiac Theatre)</h4>
+                <p>國際級歌舞秀與特技表演的主場地，每晚都有精彩演出。</p>
+            </div>
+
+            <div class="facility-item">
+                <h4>羅馬泳池與滑水道 (Roman Pool & Waterslides)</h4>
+                <p>戶外羅馬主題泳池區，設有適合成人和兒童的滑水道，是享受日光浴和戲水的好去處。</p>
+            </div>
+
+            <div class="facility-item">
+                <h4>VR 探索館 (VR Explorations) / 動感地帶</h4>
+                <p>沉浸式虛擬實境遊戲、電子遊樂場，帶來科技感的娛樂體驗 (部分項目需收費)。</p>
+            </div>
+
+            <div class="facility-item">
+                <h4>水晶生活·水療中心 (Crystal Life Spa) / 健身房</h4>
+                <p>提供水療護理、按摩、桑拿，以及配備先進器材的健身中心。</p>
+            </div>
+
+            <div class="facility-item">
+                <h4>小小夢想家天地 (Little Dreamers Club)</h4>
+                <p>專為兒童設計的俱樂部，提供豐富的遊戲和活動，讓家長也能享受自由時光。</p>
             </div>
         </section>
 
-        <section id="booking" style="background-color: #00509e; color: white;">
-            <h2 style="color: white;">開啟您的夢想之旅
+        <section id="shore">
+            <h2>岸上行程 (Shore Excursions)</h2>
+            <p>郵輪停靠港口時，旅客可選擇參加郵輪公司規劃的付費套裝行程，或自行安排岸上觀光。</p>
+            
+            <div class="shore-excursion">
+                <h4>📍 台灣跳島/環島航線 (例：基隆、澎湖、金門、馬祖、花蓮、高雄)</h4>
+                <p>郵輪公司通常會推出各停靠港口的半日或一日遊，包括當地著名景點、文化體驗和美食探索。</p>
+                <ul>
+                    <li>**行程範例 (高雄):** 駁二藝術特區、佛陀紀念館、旗山老街。</li>
+                    <li>**行程範例 (花蓮):** 太魯閣國家公園、七星潭風景區。</li>
+                </ul>
+            </div>
+            
+            <div class="shore-excursion">
+                <h4>📝 注意事項</h4>
+                <p>岸上觀光行程需**額外付費**加購，請以船上或旅行社公告的行程內容、價格和體能強度為準。建議在登船前或一上船後盡快預訂。</p>
+                <p>部分港口需搭乘接駁船上下岸，請務必注意回船時間。</p>
+            </div>
+        </section>
+
+        <section id="qa">
+            <h2>常見問題 (Q&A)</h2>
+            
+            <div class="qa-item">
+                <strong>Q: 船上主要使用哪種語言和貨幣？</strong>
+                <p>A: 探索夢號以亞洲市場為主，船上提供**中文**服務人員和菜單。船上消費通常以**新台幣 (TWD)** 計價，或依當時航線調整。</p>
+            </div>
+            
+            <div class="qa-item">
+                <strong>Q: 船上有提供 Wi-Fi 服務嗎？</strong>
+                <p>A: 船上提供 **Wi-Fi 網路服務**，但通常需要**額外付費**購買網路套餐，訊號強度可能受海域影響。</p>
+            </div>
+            
+            <div class="qa-item">
+                <strong>Q: 暈船怎麼辦？</strong>
+                <p>A: 郵輪通常航行平穩，但若遇海象不佳，可向船上醫務室或服務台諮詢**暈船藥**。選擇船中、低樓層的房間能感覺較穩定。</p>
+            </div>
+
+            <div class="qa-item">
+                <strong>Q: 登船需要哪些證件？</strong>
+                <p>A: 通常需要**有效護照** (效期建議六個月以上) 和船票 (或電子憑證)。詳細證件要求請依出發地與航線規定為準。</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center; padding: 10px; background-color: #004a77; color: white; margin-top: 0;">&copy; 探索夢號郵輪資訊參考 (請以最新官方公告為準)</p>
+    </footer>
+
+</body>
+</html>
