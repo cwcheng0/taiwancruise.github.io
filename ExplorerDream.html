@@ -3,190 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>探索夢號郵輪介紹 Explorer Dream</title>
+    <title>探索夢號 - Explorer Dream</title>
     <style>
-        body { font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background-color: #004a77; color: white; padding: 20px 0; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        nav { background-color: #0066a1; text-align: center; padding: 10px 0; }
-        nav a { color: white; text-decoration: none; padding: 10px 15px; display: inline-block; transition: background-color 0.3s; }
-        nav a:hover { background-color: #003355; }
-        .container { width: 90%; margin: auto; overflow: hidden; padding: 20px 0; }
-        section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h2 { color: #004a77; border-bottom: 3px solid #0066a1; padding-bottom: 10px; margin-top: 0; }
-        .data-list { list-style: none; padding: 0; }
-        .data-list li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .data-list li::before { content: '•'; color: #0066a1; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
-        .qa-item { margin-bottom: 15px; border-left: 5px solid #0066a1; padding-left: 15px; }
-        .qa-item strong { color: #004a77; display: block; margin-bottom: 5px; }
-        .room-type, .restaurant-item, .facility-item, .shore-excursion { margin-bottom: 20px; padding: 15px; border: 1px dashed #ccc; border-radius: 4px; }
+        body {
+            font-family: 'Noto Sans TC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef3f6;
+            color: #2c3e50;
+        }
+        .header {
+            background-color: #007bb5; /* Dream Cruises Blue */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+        .header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .section {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            border-top: 5px solid #ffaa00; /* Orange/Gold Accent */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bb5;
+            border-bottom: 2px solid #ffaa00;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table th, .info-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .info-table th {
+            background-color: #f7f9fb;
+            width: 40%;
+            font-weight: bold;
+            color: #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 4px solid #007bb5;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .feature-list strong {
+            color: #cc5200;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>探索夢號 Explorer Dream</h1>
-        <p>夢想家的探索精神，帶您暢遊更廣闊的遠海領域。</p>
-    </header>
-
-    <nav>
-        <a href="#info">基本資料</a>
-        <a href="#rooms">房型</a>
-        <a href="#dining">餐廳</a>
-        <a href="#entertainment">船上娛樂設施</a>
-        <a href="#shore">岸上行程</a>
-        <a href="#qa">QA</a>
-    </nav>
+    <div class="header">
+        <h1>🛳️ 探索夢號 (Explorer Dream)</h1>
+        <p>探索亞太的嶄新邊界，感受亞洲好客之道與國際奢華的完美融合</p>
+    </div>
 
     <div class="container">
+        
+        <div id="basic-info" class="section">
+            <h2>船隻概覽 (Basic Ship Information)</h2>
+            <p>探索夢號是一艘中型豪華郵輪，以其高達 **24 節**的平均航速，被譽為亞太地區最快的郵輪之一。經過耗資 $5400 萬美元的翻新，其設施和客房全面升級。</p>
+            
+            <table class="info-table">
+                <tr>
+                    <th>總噸位 (Gross Tonnage)</th>
+                    <td>75,338 噸</td>
+                </tr>
+                <tr>
+                    <th>船身長度 (Overall Length)</th>
+                    <td>約 268.6 公尺 (m)</td>
+                </tr>
+                <tr>
+                    <th>賓客載客量 (Lower Berths)</th>
+                    <td>約 1,856 人</td>
+                </tr>
+                <tr>
+                    <th>客房數量 (No. of Cabins)</th>
+                    <td>約 928 間</td>
+                </tr>
+                <tr>
+                    <th>翻新年份 (Refurbished Year)</th>
+                    <td>2019 年</td>
+                </tr>
+                <tr>
+                    <th>甲板層數 (Decks)</th>
+                    <td>13 層</td>
+                </tr>
+                <tr>
+                    <th>所屬公司</th>
+                    <td>麗星郵輪 (Star Cruises) / 名勝世界郵輪 (Resorts World Cruises)</td>
+                </tr>
+                <tr>
+                    <th>船中船奢華體驗</th>
+                    <td>The Palace 皇宮: 專屬奢華區，配有私人泳池甲板、餐廳、酒廊和歐式管家服務。</td>
+                </tr>
+            </table>
+        </div>
 
-        <section id="info">
-            <h2>基本資料</h2>
-            <ul class="data-list">
-                <li>**總噸位 (Gross Tonnage):** 75,338 噸</li>
-                <li>**長度 (Length):** 約 268 公尺</li>
-                <li>**寬度 (Width):** 約 32 公尺</li>
-                <li>**載客量 (Passenger Capacity):** 約 1,856 人 (以雙人入住計算)</li>
-                <li>**甲板層數 (Decks):** 13 層</li>
-                <li>**客艙數量 (Cabins):** 928 間</li>
-                <li>**所屬公司:** 麗星郵輪 (Star Cruises) / 名勝世界郵輪 (Resorts World Cruises) (視航線與營運者調整)</li>
+        <div id="restaurants" class="section">
+            <h2>🍽️ 饕餮美食 - 跨越亞洲與國際 (Restaurants & Dining)</h2>
+            <p>船上擁有超過 **15 間**餐廳、酒吧及酒廊，提供融合東西方精髓的豐富餐飲選擇，滿足不同口味的需求。</p>
+
+            <ul class="feature-list">
+                <li>
+                    <strong>夢想餐飲廳 (Dream Dining Room) / 麗都自助餐廳 (The Lido)</strong>
+                    <br><strong>免費主餐廳</strong>：提供多樣化的中西式套餐、中式美饌（如 Pavilion）和豐富的國際自助餐，是主要用餐場所。
+                </li>
+                <li>
+                    <strong>海鮮燒烤餐廳 (Seafood Grill by Mark Best)</strong>
+                    <br>由澳洲名廚 Mark Best 打造的<strong>特色付費餐廳</strong>，提供新鮮海鮮燒烤及精緻料理，通常設有戶外用餐區。
+                </li>
+                <li>
+                    <strong>海馬日式料理及鐵板燒 (Umi Uma)</strong>
+                    <br>結合壽司、刺身和互動式<strong>鐵板燒</strong>的日式付費餐廳，為您帶來一場美食與表演的饗宴。
+                </li>
+                <li>
+                    <strong>火鍋 (Hot Pot)</strong>
+                    <br>提供道地中式火鍋體驗，讓您在海上享受熱騰騰的亞洲圍爐樂趣。（付費）
+                </li>
+                <li>
+                    <strong>藍湖美食 (Blue Lagoon)</strong>
+                    <br>提供亞洲風味小吃和輕食的休閒餐廳，是您享用下午茶或宵夜的好去處。
+                </li>
             </ul>
-            <p>探索夢號以精緻海上空間和國際級表演/美食聞名，為旅客帶來頂級的亞洲式服務與歐式情調。</p>
-        </section>
+        </div>
 
-        <section id="rooms">
+        <div id="entertainment" class="section">
+            <h2>🎉 精彩娛樂與休閒設施 (Entertainment & Activities)</h2>
+            <p>船上設施完善，從頂級劇院表演到高科技遊戲，讓您在航行中充滿活力與樂趣。</p>
+
+            <ul class="feature-list">
+                <li>
+                    <strong>星空劇院 (Zodiac Theatre)</strong>
+                    <br>豪華的主表演廳，每晚呈現**國際級製作的大型歌舞表演**，匯聚世界各地優秀的表演者。
+                </li>
+                <li>
+                    <strong>羅馬泳池 & 凱撒滑水道 (Parthenon Pool & Caesar's Slide)</strong>
+                    <br>羅馬主題的戶外泳池甲板，設有刺激的**水上滑梯**、按摩浴缸和大型 LED 螢幕，是日間休閒的中心。
+                </li>
+                <li>
+                    <strong>ESC 體驗實驗室 (ESC Experience Lab)</strong>
+                    <br>配備最新虛擬實境 (VR) 和擴增實境 (AR) 科技，提供 **VR 遊戲和模擬賽車**等高科技互動娛樂。（可能需付費）
+                </li>
+                <li>
+                    <strong>健身房與水療中心 (Gym & SPA)</strong>
+                    <br>寬敞的健身中心，配備現代化設施，並設有峇里島風格的 **Crystal Life SPA**，提供一系列舒緩的美容和按摩服務。
+                </li>
+                <li>
+                    <strong>小小夢想家天地 (Little Dreamers Club)</strong>
+                    <br>專為兒童設計的活動中心，提供遊戲、工作坊和主題派對，讓小客人們盡情玩樂。
+                </li>
+                <li>
+                    <strong>運動天地 (Sportsplex)</strong>
+                    <br>多功能體育場，可進行籃球、足球、網球等多種運動，讓您在海上也能保持活力。
+                </li>
+            </ul>
+        </div>
+
+		
+        <div id="room" class="section">
             <h2>房型介紹</h2>
             <p>探索夢號提供多樣化的客房選擇，從經濟實惠的內側客房到頂級奢華的「皇宮」套房。</p>
 
-            <div class="room-type">
-                <h3>內側客房 (Inside Stateroom)</h3>
-                <p>位於船體內部，無對外窗。是最經濟實惠的選擇。面積約 12-20 平方米。</p>
-            </div>
+            <ul class="feature-list">
+			<li>
+                <strong>內側客房 (Inside Stateroom)</strong>
+                <br>位於船體內部，無對外窗。是最經濟實惠的選擇。面積約 12-20 平方米。
 
-            <div class="room-type">
-                <h3>海景客房/舷窗客房 (Oceanview Stateroom)</h3>
-                <p>設有對外窗（可能是圓形舷窗或方形大窗），可欣賞海景，但無法開啟。面積約 13-20 平方米。</p>
-            </div>
-
-            <div class="room-type">
-                <h3>露台客房 (Balcony Stateroom)</h3>
-                <p>配有專屬私人陽台，可隨時感受海風、欣賞海景。是郵輪旅遊中最受歡迎的房型。面積約 18-20 平方米。</p>
-            </div>
-
-            <div class="room-type">
-                <h3>皇宮套房 (The Palace Suites)</h3>
-                <p>頂級「船中船」概念的奢華套房系列，提供專屬管家服務、私人泳池、餐廳等多項全包式禮遇。包括皇宮套房、行政套房、庭苑別墅等不同等級。</p>
-            </div>
-        </section>
-
-        <section id="dining">
-            <h2>船上餐廳</h2>
-            <p>船上擁有豐富多元的餐飲選擇，包含免費餐廳（餐費已含）與特色付費餐廳（需額外付費或使用餐券）。</p>
-
-            <h3>免費餐廳 (Free Dining)</h3>
-            <div class="restaurant-item">
-                <h4>麗都自助餐廳 (Lido Buffet)</h4>
-                <p>國際美食自助餐，供應中西式早、午、晚餐及宵夜，選擇豐富。</p>
-            </div>
-            <div class="restaurant-item">
-                <h4>星夢餐廳 (Dream Dining Room) / 百味軒</h4>
-                <p>主打中式或西式套餐/單點料理，環境優雅，通常是正餐時段的主要用餐地點。</p>
-            </div>
-
-            <h3>特色付費餐廳 (Specialty Dining)</h3>
-            <div class="restaurant-item">
-                <h4>絲路花舞中餐廳 (Silk Road & Flowers Chinese Restaurant)</h4>
-                <p>提供精緻中式料理、港式點心，以烤鴨等特色菜聞名，建議提早預訂。</p>
-            </div>
-            <div class="restaurant-item">
-                <h4>海馬日本料理/鐵板燒 (Umi Uma Japanese Restaurant)</h4>
-                <p>提供道地日式料理、壽司與精彩的鐵板燒表演秀。</p>
-            </div>
-            <div class="restaurant-item">
-                <h4>星宴 (Steakhouse) / 戶外火鍋</h4>
-                <p>提供頂級牛排或海鮮燒烤，部分航次提供戶外火鍋，享受海風下的美食體驗。</p>
-            </div>
-        </section>
-
-        <section id="entertainment">
-            <h2>船上娛樂設施</h2>
-            <p>從休閒放鬆到刺激活動，探索夢號提供適合各年齡層的設施和活動。</p>
-
-            <div class="facility-item">
-                <h4>⭐ 星座劇院 (Zodiac Theatre)</h4>
-                <p>國際級歌舞秀與特技表演的主場地，每晚都有精彩演出。</p>
-            </div>
-
-            <div class="facility-item">
-                <h4>羅馬泳池與滑水道 (Roman Pool & Waterslides)</h4>
-                <p>戶外羅馬主題泳池區，設有適合成人和兒童的滑水道，是享受日光浴和戲水的好去處。</p>
-            </div>
-
-            <div class="facility-item">
-                <h4>VR 探索館 (VR Explorations) / 動感地帶</h4>
-                <p>沉浸式虛擬實境遊戲、電子遊樂場，帶來科技感的娛樂體驗 (部分項目需收費)。</p>
-            </div>
-
-            <div class="facility-item">
-                <h4>水晶生活·水療中心 (Crystal Life Spa) / 健身房</h4>
-                <p>提供水療護理、按摩、桑拿，以及配備先進器材的健身中心。</p>
-            </div>
-
-            <div class="facility-item">
-                <h4>小小夢想家天地 (Little Dreamers Club)</h4>
-                <p>專為兒童設計的俱樂部，提供豐富的遊戲和活動，讓家長也能享受自由時光。</p>
-            </div>
-        </section>
-
-        <section id="shore">
+			<li>
+                <strong>海景客房/舷窗客房 (Oceanview Stateroom)</strong>
+                <br>設有對外窗（可能是圓形舷窗或方形大窗），可欣賞海景，但無法開啟。面積約 13-20 平方米。
+            </li>
+			<li>
+                <strong>露台客房 (Balcony Stateroom)</strong>
+                <br>配有專屬私人陽台，可隨時感受海風、欣賞海景。是郵輪旅遊中最受歡迎的房型。面積約 18-20 平方米。
+            </li>
+			<li>
+                <strong>皇宮套房 (The Palace Suites)</strong>
+                <br>頂級「船中船」概念的奢華套房系列，提供專屬管家服務、私人泳池、餐廳等多項全包式禮遇。包括皇宮套房、行政套房、庭苑別墅等不同等級。
+            </li>
+            </ul>
+        </div>
+		
+		
+        <div id="shore" class="section">
             <h2>岸上行程 (Shore Excursions)</h2>
-            <p>郵輪停靠港口時，旅客可選擇參加郵輪公司規劃的付費套裝行程，或自行安排岸上觀光。</p>
+            <ul class="feature-list">
+		<li>       
+            郵輪停靠港口時，旅客可選擇參加郵輪公司規劃的付費套裝行程，或自行安排岸上觀光。
             
-            <div class="shore-excursion">
-                <h4>📍 台灣跳島/環島航線 (例：基隆、澎湖、金門、馬祖、花蓮、高雄)</h4>
-                <p>郵輪公司通常會推出各停靠港口的半日或一日遊，包括當地著名景點、文化體驗和美食探索。</p>
-                <ul>
-                    <li>**行程範例 (高雄):** 駁二藝術特區、佛陀紀念館、旗山老街。</li>
-                    <li>**行程範例 (花蓮):** 太魯閣國家公園、七星潭風景區。</li>
-                </ul>
-            </div>
-            
-            <div class="shore-excursion">
-                <h4>📝 注意事項</h4>
-                <p>岸上觀光行程需**額外付費**加購，請以船上或旅行社公告的行程內容、價格和體能強度為準。建議在登船前或一上船後盡快預訂。</p>
-                <p>部分港口需搭乘接駁船上下岸，請務必注意回船時間。</p>
-            </div>
-        </section>
+                <strong>📍 台灣跳島/環島航線 (例：基隆、澎湖、金門、馬祖、花蓮、高雄)</strong>
+                <br>郵輪公司通常會推出各停靠港口的半日或一日遊，包括當地著名景點、文化體驗和美食探索。
+                    <br>**行程範例 (高雄):** 駁二藝術特區、佛陀紀念館、旗山老街。
+                    <br>**行程範例 (花蓮):** 太魯閣國家公園、七星潭風景區。
+		</li>       
+		<li>            
+                <strong>📝 注意事項</strong>
+                <br>岸上觀光行程需**額外付費**加購，請以船上或旅行社公告的行程內容、價格和體能強度為準。建議在登船前或一上船後盡快預訂。
+                <br>部分港口需搭乘接駁船上下岸，請務必注意回船時間。
 
-        <section id="qa">
-            <h2>常見問題 (Q&A)</h2>
-            
-            <div class="qa-item">
+        </li>
+            </ul>		
+        </div>
+
+        <div id="qa" class="section">
+            <strong>常見問題 (Q&A)</strong>
+            <ul class="feature-list">            
+			<li>          
                 <strong>Q: 船上主要使用哪種語言和貨幣？</strong>
-                <p>A: 探索夢號以亞洲市場為主，船上提供**中文**服務人員和菜單。船上消費通常以**新台幣 (TWD)** 計價，或依當時航線調整。</p>
-            </div>
-            
-            <div class="qa-item">
+                <br>A: 探索夢號以亞洲市場為主，船上提供**中文**服務人員和菜單。船上消費通常以**新台幣 (TWD)** 計價，或依當時航線調整。         
+            </li>
+			<li>
                 <strong>Q: 船上有提供 Wi-Fi 服務嗎？</strong>
-                <p>A: 船上提供 **Wi-Fi 網路服務**，但通常需要**額外付費**購買網路套餐，訊號強度可能受海域影響。</p>
-            </div>
-            
-            <div class="qa-item">
+                <br>A: 船上提供 **Wi-Fi 網路服務**，但通常需要**額外付費**購買網路套餐，訊號強度可能受海域影響。
+            </li>
+			<li>           
                 <strong>Q: 暈船怎麼辦？</strong>
-                <p>A: 郵輪通常航行平穩，但若遇海象不佳，可向船上醫務室或服務台諮詢**暈船藥**。選擇船中、低樓層的房間能感覺較穩定。</p>
-            </div>
-
-            <div class="qa-item">
+                <br>A: 郵輪通常航行平穩，但若遇海象不佳，可向船上醫務室或服務台諮詢**暈船藥**。選擇船中、低樓層的房間能感覺較穩定。
+            </li>
+			<li>
                 <strong>Q: 登船需要哪些證件？</strong>
-                <p>A: 通常需要**有效護照** (效期建議六個月以上) 和船票 (或電子憑證)。詳細證件要求請依出發地與航線規定為準。</p>
-            </div>
-        </section>
+                <br>A: 通常需要**有效護照** (效期建議六個月以上) 和船票 (或電子憑證)。詳細證件要求請依出發地與航線規定為準。
+            </li>
+            </ul>
+		 </div>
 
+		
+		
+		
     </div>
-
-    <footer>
-        <p style="text-align: center; padding: 10px; background-color: #004a77; color: white; margin-top: 0;">&copy; 探索夢號郵輪資訊參考 (請以最新官方公告為準)</p>
-    </footer>
 
 </body>
 </html>
