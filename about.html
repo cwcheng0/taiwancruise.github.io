@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>關於我們的銷售-靠港台灣的郵輪</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        margin: 0;
+        background-color: #f8f9fa;
+        color: #343a40;
+        line-height: 1.8;
+    }
+
+    /* --- Header & Navigation --- */
+    .navbar {
+        background-color: #ffffff;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #003366;
+        text-decoration: none;
+    }
+    .navbar .nav-links a {
+        color: #003366;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+    .navbar .nav-links a:hover {
+        color: #0056b3;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+        position: relative;
+        height: 60vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('[https://images.unsplash.com/photo-1516733978542-f28c2c78a0f5?q=80&w=2070&auto=format&fit=crop](https://images.unsplash.com/photo-1516733978542-f28c2c78a0f5?q=80&w=2070&auto=format&fit=crop)');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+    }
+    .hero-content {
+        max-width: 800px;
+    }
+    .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .hero p {
+        font-size: 1.25rem;
+        font-weight: 300;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* --- General Content Styling --- */
+    .container {
+        max-width: 1100px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+    }
+    .section {
+        margin-bottom: 4rem;
+    }
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #003366;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: #ffc107;
+        border-radius: 2px;
+    }
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #6c757d;
+        max-width: 700px;
+        margin: 0 auto 3rem auto;
+    }
+
+    /* --- Our Story Section --- */
+    .story-content {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    .story-text {
+        flex: 1;
+    }
+    .story-image {
+        flex: 1;
+    }
+    .story-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* --- Timeline Section --- */
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #003366;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+    }
+    .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    .timeline-item.left {
+        left: 0;
+    }
+    .timeline-item.right {
+        left: 50%;
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: white;
+        border: 4px solid #ffc107;
+        top: 25px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .right::after {
+        left: -10px;
+    }
+    .timeline-content {
+        padding: 20px;
+        background-color: white;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .timeline-content h3 {
+        margin-top: 0;
+        color: #003366;
+    }
+
+    /* --- Our Values Section --- */
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .value-card {
+        background-color: #ffffff;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        border-top: 5px solid #ffc107;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .value-card .icon {
+        font-size: 3rem;
+        color: #003366;
+        margin-bottom: 1rem;
+    }
+    .value-card h3 {
+        font-size: 1.5rem;
+        color: #003366;
+        margin-bottom: 0.5rem;
+    }
+
+    /* --- Fleet Section --- */
+    .fleet-section {
+        background-color: #e9ecef;
+        padding: 4rem 0;
+    }
+    .fleet-content {
+        text-align: center;
+    }
+    .btn {
+        background-color: #ffc107;
+        color: #343a40;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 700;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+        margin-top: 1rem;
+        border: none;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #e0a800;
+        transform: scale(1.05);
+    }
+    
+    /* --- Footer --- */
+    .footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1.1rem; }
+        .story-content { flex-direction: column; }
+        .timeline::after { left: 31px; }
+        .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+        .timeline-item.left::after, .timeline-item.right::after { left: 21px; }
+        .timeline-item.right { left: 0%; }
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#" class="logo">靠港台灣的郵輪</a>
+    <div class="nav-links">
+        <a href="#">基隆</a>
+        <a href="#">高雄</a>
+        <a href="contact.html">聯絡我們</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>關於我們</h1>
+        <p>我們連接世界，創造永恆回憶。我們不僅是旅遊，更是夢想的實現者。</p>
+    </div>
+</section>
+
+<div class="container">
+    <section id="story" class="section">
+        <h2 class="section-title">我們的故事</h2>
+        <p class="section-subtitle">從一個偉大的夢想啟航，我們致力於重新定義海上旅行的標竿。</p>
+        <div class="story-content">
+            <div class="story-text">
+                <p>我們波波旅行社成立於2024年，源自於創辦人對海洋的熱愛以及分享世界之美的渴望。我們從一個基隆的上岸遊程出發，搭載著對未知充滿好奇的旅客。一年多來，我們不斷成長，我們的服務和客戶數不斷增加。</p>
+                <p>我們的使命是提供專業的海上假期。我們相信，旅行不僅是從A點到B點，更是一場豐富心靈、開拓視野的體驗。每一段航程，我們都用心規劃，期望為您帶來一生難忘的珍貴回憶。</p>
+            </div>
+            <div class="story-image">
+                <img src="[https://images.unsplash.com/photo-1590842322969-e0b4a45a6a9b?q=80&w=1932&auto=format&fit=crop](https://images.unsplash.com/photo-1590842322969-e0b4a45a6a9b?q=80&w=1932&auto=format&fit=crop)" alt="Cruise ship at sunset">
+            </div>
+        </div>
+    </section>
+
+    <section id="milestones" class="section">
+        <h2 class="section-title">發展歷程</h2>
+         <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2024年 - 夢想啟航</h3>
+                    <p>「波波旅行社」品牌成立，出發前往摩洛哥和埃及搭乘郵輪。</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2024年 - 接待郵輪入境團</h3>
+                    <p>基隆及台北一日遊。</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2025年 - 前進美國IPW</h3>
+                    <p>到美國考察美國旅遊及郵輪路線。</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2025年 - 南極</h3>
+                    <p>前進阿根廷及南極。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="section">
+        <h2 class="section-title">我們的核心價值</h2>
+        <p class="section-subtitle">我們的每一次決策、每一次服務，都基於以下堅定不移的信念。</p>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="icon">⚓</div>
+                <h3>安全至上</h3>
+                <p>我們的經驗告訴我們安全的旅遊路線。</p>
+            </div>
+            <div class="value-card">
+                <div class="icon">❤️</div>
+                <h3>卓越服務</h3>
+                <p>從預訂到離船，我們熱情專業的團隊致力於提供符合期待的個人化服務與關懷。</p>
+            </div>
+            <div class="value-card">
+                <div class="icon">🌍</div>
+                <h3>永續發展</h3>
+                <p>我們深愛並尊重海洋，積極推動環保措施，致力於減少碳足跡，保護我們所到之處的自然美景。</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="fleet" class="fleet-section">
+    <div class="container fleet-content">
+        <h2 class="section-title">探索我們的團隊</h2>
+        <p class="section-subtitle">我們擁有10多年的旅遊服務經驗，從 Fly Cruse 到本地出發的郵輪。</p>
+		<a href="https://www.ey.gov.tw/Page/AABD2F12D8A6D561/090a1bbe-9bdb-4930-8a94-5ea7d404db62">行政院郵輪公版代訂協議</a>
+        <a href="index.html" class="btn">回首頁查看船隻</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 波波旅行社版權所有。</p>
+</footer>
+</body>
+</html>
