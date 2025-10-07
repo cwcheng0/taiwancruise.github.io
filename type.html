@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>船型分類</title>
+<style>
+body {
+font-family: 'Helvetica Neue', Arial, '蘋方-繁', 'PingFang TC', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+margin: 0;
+background-color: #f4f8fb;
+color: #333;
+line-height: 1.6;
+}
+.header {
+background-color: #003366;
+color: #ffffff;
+padding: 1.5rem 0;
+text-align: center;
+border-bottom: 5px solid #ffc107;
+}
+.header h1 {
+margin: 0;
+font-size: 2.5rem;
+font-weight: 300;
+letter-spacing: 2px;
+}
+.container {
+max-width: 1200px;
+margin: 2rem auto;
+padding: 0 15px;
+}
+.category-tabs {
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
+border-bottom: 2px solid #ddd;
+}
+.tab-button {
+background-color: transparent;
+border: none;
+padding: 1rem 1.5rem;
+cursor: pointer;
+font-size: 1.2rem;
+position: relative;
+color: #555;
+transition: color 0.3s ease;
+}
+.tab-button:after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #003366;
+transform: scaleX(0);
+transition: transform 0.3s ease;
+}
+.tab-button.active, .tab-button:hover {
+color: #003366;
+}
+.tab-button.active:after, .tab-button:hover:after {
+transform: scaleX(1);
+}
+.category-content {
+display: none;
+}
+.category-content.active {
+display: block;
+}
+.ship-card {
+display: flex;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+margin-bottom: 2rem;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ship-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.ship-image {
+flex: 0 0 40%;
+background-size: cover;
+background-position: center;
+min-height: 300px;
+}
+.ship-details {
+flex: 1;
+padding: 2rem;
+}
+.ship-details h2 {
+margin-top: 0;
+font-size: 2rem;
+color: #003366;
+}
+.ship-badge {
+display: inline-block;
+padding: 0.3rem 0.8rem;
+border-radius: 20px;
+font-size: 0.9rem;
+color: #fff;
+margin-bottom: 1rem;
+}
+.badge-luxury { background-color: #bfa06b; }
+.badge-standard { background-color: #007bff; }
+.badge-entry { background-color: #28a745; }
+
+    .ship-features {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .ship-features li {
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    .ship-features li:before {
+        content: '✓';
+        color: #003366;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+    .ship-description {
+        margin-bottom: 1.5rem;
+    }
+    .btn-details {
+        background-color: #ffc107;
+        color: #333;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .btn-details:hover {
+        background-color: #e0a800;
+    }
+
+    @media (max-width: 768px) {
+        .ship-card {
+            flex-direction: column;
+        }
+        .ship-image {
+            flex: 0 0 250px;
+        }
+        .ship-features {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <h1>探索我們的船隊</h1>
+</header>
+
+<div class="container">
+    <div class="category-tabs">
+        <button class="tab-button active" onclick="showCategory('luxury')">豪華船型</button>
+        <button class="tab-button" onclick="showCategory('standard')">一般船型</button>
+        <button class="tab-button" onclick="showCategory('entry')">入門船型</button>
+    </div>
+
+    <div id="luxury" class="category-content active">
+        <div class="ship-card">
+            <div class="ship-image" style="background-image: url('[https://images.unsplash.com/photo-1599059021798-997327a36b85?q=80&w=2070&auto=format&fit=crop](https://images.unsplash.com/photo-1599059021798-997327a36b85?q=80&w=2070&auto=format&fit=crop)');"></div>
+            <div class="ship-details">
+                <span class="ship-badge badge-luxury">頂級奢華</span>
+                <h2>海洋交響號(MS Symphony of the Seas)</h2>
+                <p class="ship-description">極致奢華的海上宮殿，為您提供無與倫比的尊榮體驗。從米其林星級餐飲到私人管家服務，每一個細節都為品味卓越的您而設。</p>
+                <ul class="ship-features">
+                    <li>全套房艙房設計</li>
+                    <li>米其林主廚餐廳</li>
+                    <li>24小時專屬管家</li>
+                    <li>頂級奢華Spa中心</li>
+                    <li>精緻船上娛樂表演</li>
+                    <li>高規格乘客服務比</li>
+                </ul>
+                <a href="#" class="btn-details">查看詳情</a>
+            </div>
+        </div>
+         <div class="ship-card">
+            <div class="ship-image" style="background-image: url('[https://images.unsplash.com/photo-1621415951239-1ff5b83084d5?q=80&w=1932&auto=format&fit=crop](https://images.unsplash.com/photo-1621415951239-1ff5b83084d5?q=80&w=1932&auto=format&fit=crop)');"></div>
+            <div class="ship-details">
+                <span class="ship-badge badge-luxury">頂級奢華</span>
+                <h2>銀河星鑽號(Silver Nova)</h2>
+                <p class="ship-description">榮獲多項國際大獎，銀河星鑽號以其典雅設計與貼心服務聞名。每一次航行都是一場藝術與文化的盛宴。</p>
+                <ul class="ship-features">
+                    <li>全陽台套房</li>
+                    <li>多國主題美食饗宴</li>
+                    <li>隨行學者專家講座</li>
+                    <li>小型團體岸上觀光</li>
+                     <li>免費無限Wi-Fi</li>
+                    <li>精選酒水無限暢飲</li>
+                </ul>
+                <a href="#" class="btn-details">查看詳情</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="standard" class="category-content">
+        <div class="ship-card">
+            <div class="ship-image" style="background-image: url('[https://images.unsplash.com/photo-1548858130-45c31043a41b?q=80&w=2071&auto=format&fit=crop](https://images.unsplash.com/photo-1548858130-45c31043a41b?q=80&w=2071&auto=format&fit=crop)');"></div>
+            <div class="ship-details">
+                <span class="ship-badge badge-standard">優質體驗</span>
+                <h2>大洋郵輪海濱號(Oceania Riviera)</h2>
+                <p class="ship-description">完美平衡舒適度與多樣化的船上活動。無論是家庭旅遊或好友同行，蔚藍海岸號都能滿足您對海上假期的一切想像。</p>
+                <ul class="ship-features">
+                    <li>多樣化艙房選擇</li>
+                    <li>環球美食自助餐</li>
+                    <li>大型水上樂園設施</li>
+                    <li>百老匯風格劇院</li>
+                    <li>免稅購物商店街</li>
+                    <li>專業兒童俱樂部</li>
+                </ul>
+                <a href="#" class="btn-details">查看詳情</a>
+            </div>
+        </div>
+        <div class="ship-card">
+            <div class="ship-image" style="background-image: url('[https://images.unsplash.com/photo-1605303423235-a8878b6932a3?q=80&w=2070&auto=format&fit=crop](https://images.unsplash.com/photo-1605303423235-a8878b6932a3?q=80&w=2070&auto=format&fit=crop)');"></div>
+            <div class="ship-details">
+                <span class="ship-badge badge-standard">優質體驗</span>
+                <h2>璽寶郵輪晨曦追夢號(Seabourn)</h2>
+                <p class="ship-description">以寬敞的公共空間和豐富的娛樂選項著稱，讓您在探索世界的同時，也能享受海上生活的悠閒與愜意。</p>
+                <ul class="ship-features">
+                    <li>高比例陽台艙房</li>
+                    <li>露天電影院</li>
+                    <li>多元運動設施</li>
+                    <li>主題派對與活動</li>
+                    <li>特色酒吧與酒廊</li>
+                    <li>寧靜成人專屬區域</li>
+                </ul>
+                <a href="#" class="btn-details">查看詳情</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="entry" class="category-content">
+        <div class="ship-card">
+            <div class="ship-image" style="background-image: url('[https://images.unsplash.com/photo-1517400508447-f8a614f8a198?q=80&w=2070&auto=format&fit=crop](https://images.unsplash.com/photo-1517400508447-f8a614f8a198?q=80&w=2070&auto=format&fit=crop)');"></div>
+            <div class="ship-details">
+                <span class="ship-badge badge-entry">經濟實惠</span>
+                <h2><a href="StarNavidator.html">麗星郵輪探險家號</a></h2>
+                <p class="ship-description">首次體驗郵輪假期的最佳選擇。以最親民的價格，提供安全舒適的航程與應有盡有的基本設施，輕鬆開啟您的海上之旅。</p>
+                <ul class="ship-features">
+                    <li>經濟實惠內艙房</li>
+                    <li>主餐廳與自助餐</li>
+                    <li>戶外游泳池與甲板</li>
+                    <li>每日精選娛樂活動</li>
+                    <li>健身中心</li>
+                    <li>卡拉OK與遊戲室</li>
+                </ul>
+                <a href="StarNavidator.html" class="btn-details">查看詳情</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function showCategory(categoryId) {
+        // Hide all category contents
+        const contents = document.querySelectorAll('.category-content');
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Deactivate all tab buttons
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => {
+            button.classList.remove('active');
+        });
+
+        // Show the selected category content
+        document.getElementById(categoryId).classList.add('active');
+
+        // Activate the clicked tab button
+        document.querySelector(`.tab-button[onclick="showCategory('${categoryId}')"]`).classList.add('active');
+    }
+</script>
+</body>
+</html>
