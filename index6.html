@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Drop-down Menu</title>
+    <style>
+        /* Basic body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation bar container */
+        .navbar {
+            background-color: #333;
+            overflow: hidden; /* Clears floats and contains the floated list items */
+        }
+
+        /* Style the list inside the navbar */
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the list items */
+        .navbar ul li {
+            float: left; /* Makes the list items appear side-by-side */
+        }
+
+        /* Style the links inside the list items */
+        .navbar ul li a {
+            display: block; /* Makes the entire area clickable, not just the text */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        /* Change color of links on hover */
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+        
+        /* The container for the dropdown */
+        .dropdown {
+            position: relative; /* This is crucial for positioning the dropdown content */
+            display: inline-block;
+        }
+
+        /* The actual dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none; /* Hide the dropdown by default */
+            position: absolute; /* Position it relative to the .dropdown container */
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1; /* Make sure it appears on top of other content */
+        }
+
+        /* Style the links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block; /* Make them stack vertically */
+            text-align: left;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover over the dropdown container */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main content area for demonstration */
+        .main-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#services" class="dropbtn">Services ▼</a>
+            <div class="dropdown-content">
+                <a href="#web-design">Web Design</a>
+                <a href="#seo">SEO</a>
+                <a href="#marketing">Marketing</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#products" class="dropbtn">Products ▼</a>
+             <div class="dropdown-content">
+                <a href="#product1">Product 1</a>
+                <a href="#product2">Product 2</a>
+            </div>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li style="float:right"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="main-content">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a sample page to demonstrate the drop-down menu in the navigation bar above.</p>
+    <p>Hover over the "Services" or "Products" link to see the drop-down in action.</p>
+</div>
+
+</body>
+</html>
