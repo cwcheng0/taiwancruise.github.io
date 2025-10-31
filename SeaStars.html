@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海之星號郵輪 | 您的夢幻海上假期</title>
+    <style>
+        /* --- 基本樣式重設與全域設定 --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- 頁首 --- */
+        header {
+            background-color: #004a99; /* 深藍色 */
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* --- 導覽列 --- */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* 在小螢幕上換行 */
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: #004a99;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #e6f0ff;
+            color: #003366;
+        }
+
+        /* --- 主要內容與區塊 --- */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #004a99;
+            border-bottom: 3px solid #f0ad4e; /* 橘色點綴 */
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- 彈性容器 (用於房型、餐廳) --- */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem; /* 項目間的間距 */
+        }
+        .item {
+            flex-basis: 300px; /* 基礎寬度 */
+            flex-grow: 1; /* 允許項目伸展 */
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden; /* 讓圖片圓角生效 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* 保持圖片比例並填滿 */
+            display: block;
+        }
+        .item-content {
+            padding: 1rem;
+        }
+        .item h3 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        /* --- 列表樣式 (用於基本資料、娛樂設施) --- */
+        .info-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info-list li {
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+        .info-list strong {
+            color: #004a99;
+            min-width: 120px;
+            display: inline-block;
+        }
+        
+        /* --- QA 樣式 --- */
+        details {
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        summary {
+            padding: 1rem;
+            font-weight: 600;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            color: #003366;
+        }
+        summary:hover {
+            background-color: #e6f0ff;
+        }
+        details[open] summary {
+            border-bottom: 1px solid #ddd;
+        }
+        details p {
+            padding: 1rem;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        /* --- 頁尾 --- */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #333;
+            color: #aaa;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>海之星號郵輪 (Star of the Sea)</h1>
+        <p>啟航您的夢幻海上假期，探索無盡的蔚藍</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#basic-info">基本資料</a></li>
+            <li><a href="#rooms">精選房型</a></li>
+            <li><a href="#dining">美食饗宴</a></li>
+            <li><a href="#entertainment">船上娛樂</a></li>
+            <li><a href="#excursions">岸上行程</a></li>
+            <li><a href="#qa">常見問答</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="basic-info">
+            <h2>基本資料</h2>
+            <ul class="info-list">
+                <li><strong>船隻名稱：</strong> 海之星號 (Star of the Sea)</li>
+                <li><strong>首航年份：</strong> 2024 年 (全新啟航)</li>
+                <li><strong>總噸位：</strong> 185,000 噸</li>
+                <li><strong>載客量：</strong> 4,800 名乘客</li>
+                <li><strong>船員人數：</strong> 1,600 名</li>
+                <li><strong>總長度：</strong> 330 公尺</li>
+                <li><strong>甲板樓層：</strong> 18 層</li>
+                <li><strong>特色：</strong> 擁有海上首座三層樓高室內瀑布、智能環保動力系統</li>
+            </ul>
+        </section>
+
+        <section id="rooms">
+            <h2>精選房型</h2>
+            <div class="container">
+                <div class="item">
+                    <img src="https://via.placeholder.com/400x250?text=內艙房" alt="內艙房示意圖">
+                    <div class="item-content">
+                        <h3>內艙房 (Inside Cabin)</h3>
+                        <p>最經濟實惠的選擇，配備虛擬海景螢幕、舒適雙人床與獨立衛浴。適合注重活動與預算的旅客。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/400x250?text=海景房" alt="海景房示意圖">
+                    <div class="item-content">
+                        <h3>海景房 (Oceanview Cabin)</h3>
+                        <p>配有大型觀景窗，讓您在房內就能隨時欣賞壯麗海景，捕捉日出與日落的魔幻時刻。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/400x250?text=陽台房" alt="陽台房示意圖">
+                    <div class="item-content">
+                        <h3>陽台房 (Balcony Cabin)</h3>
+                        <p>擁有私人陽台，享受海風拂面與專屬的戶外空間。是情侶與家庭最受歡迎的房型。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/400x250?text=豪華套房" alt="豪華套房示意圖">
+                    <div class="item-content">
+                        <h3>豪華套房 (Suite)</h3>
+                        <p>寬敞的起居空間、獨立臥室、豪華衛浴。享受私人管家、優先登/離船及專屬餐廳禮遇。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dining">
+            <h2>美食饗宴</h2>
+            <div class="container">
+                <div class="item">
+                    <div class="item-content">
+                        <h3>蔚藍主餐廳 (免費)</h3>
+                        <p>三層樓高的華麗主餐廳，提供精緻的桌邊服務，每日更換不同主題的國際菜單。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <h3>環球自助百匯 (免費)</h3>
+                        <p>全天候供應，從現切牛排、海鮮吧到亞洲料理與法式甜點，滿足您挑剔的味蕾。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <h3>「焰」鐵板燒 (付費)</h3>
+                        <p>觀賞主廚精湛的表演，品嚐頂級和牛與龍蝦。充滿娛樂性的用餐體驗，建議預約。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <h3>義大利小館 (付費)</h3>
+                        <p>提供正宗的手工披薩與義大利麵，彷彿置身於托斯卡尼的溫馨家庭餐廳。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entertainment">
+            <h2>船上娛樂設施</h2>
+            <ul class="info-list">
+                <li><strong>星辰大劇院：</strong> 每晚G演百老匯等級的大型歌舞秀與魔術表演。</li>
+                <li><strong>AQUA 水上樂園：</strong> 擁有三條刺激的高空滑水道與漂漂河。</li>
+                <li><strong>天空步道：</strong> 懸臂式玻璃步道，行走於海面之上，挑戰您的膽量。</li>
+                <li><strong>星空電影院：</strong> 位於甲板上，在星空與海風下觀賞熱門電影。</li>
+                <li><strong>SPA 與健身中心：</strong> 配備最新器材，並提供專業芳療與水療服務。</li>
+                <li><strong>兒童探險營：</strong> 依年齡分組的托兒服務與趣味科學、藝術活動。</li>
+                <li><strong>皇家賭場：</strong> 體驗刺激的博弈娛樂 (僅於公海開放)。</li>
+                <li><strong>VR 體驗館：</strong> 進入虛擬實境，體驗未來科技的樂趣。</li>
+            </ul>
+        </section>
+
+        <section id="excursions">
+            <h2>岸上觀光行程</h2>
+            <p>海之星號將帶您停靠亞洲各大迷人港口。我們提供多樣化的岸上行程，由專業導遊帶領，讓您深入體驗當地文化與美景。所有行程均可於登船前線上預訂，或於船上的「岸上觀光服務台」洽詢。</p>
+            <h3>熱門行程範例 (以日本沖繩為例)</h3>
+            <ul class="info-list">
+                <li><strong>A. 歷史文化之旅：</strong> 參觀世界遺產「首里城」公園、玉泉洞王國村。</li>
+                <li><strong>B. 海洋生態體驗：</strong> 北部一日遊，前往「美麗海水族館」。</li>
+                <li><strong>C. 購物美食團：</strong> 國際通大街自由行與第一牧志公設市場探索。</li>
+                <li><strong>D. 浮潛與潛水：</strong> 前往慶良間群島，享受高透明度的海水 (需額外付費)。</li>
+            </ul>
+        </section>
+
+        <section id="qa">
+            <h2>常見問答 (QA)</h2>
+            <details>
+                <summary><strong>Q1: 船上的消費如何支付？</strong></summary>
+                <p>A: 登船時，您會領到一張「海星卡」（即房卡）。船上所有消費（付費餐廳、購物、岸上行程、小費等）都會記錄至此卡，並在航程最後一天統一結算。您可於登船時綁定信用卡（建議），或於航程結束前至服務台以現金（美元/台幣）結清。</p>
+            </details>
+            <details>
+                <summary><strong>Q2: 船上是否有 Wi-Fi 網路？</strong></summary>
+                <p>A: 是的，我們全船提供「星鏈 (Starlink)」高速衛星 Wi-Fi 服務。您可以根據需求購買不同的網路方案（例如：全程無限方案、單日方案）。由於是衛星訊號，在特定海域或天氣下可能偶有延遲，但已足夠應付日常通訊與網頁瀏覽。</p>
+            </details>
+            <details>
+                <summary><strong>Q3: 我需要準備什麼樣的服裝？</strong></summary>
+                <p>A: 白天以休閒、舒適為主（T恤、短褲、休閒褲）。建議攜帶泳衣（使用泳池）、運動服（使用健身房）與一件薄外套（室內空調較強）。航程中通常會有一晚「船長之夜」（正式晚宴），建議男士準備襯衫、西裝褲，女士準備洋裝或小禮服，為旅程增添儀式感。</p>
+            </details>
+            <details>
+                <summary><strong>Q4: 如果我暈船了怎麼辦？</strong></summary>
+                <p>A: 海之星號配備了最先進的「平衡穩定翼」，能大幅減少航行時的晃動，多數乘客不會感到不適。若您仍感到暈眩，可至 5 樓的 24 小時服務台免費領取暈船藥。醫療中心亦有專業醫護人員可提供協助。</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 海之星號郵輪版權所有</p>
+    </footer>
+
+</body>
+</html>
