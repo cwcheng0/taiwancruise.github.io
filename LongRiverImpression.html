@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長江三峽印象號 (Sea Stars) | 探索壯麗山河</title>
+    <style>
+        :root {
+            --primary-color: #8B4513; /* 銅棕色 */
+            --secondary-color: #D4AF37; /* 金色 */
+            --bg-light: #FDFBF7;
+            --text-dark: #2C3E50;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        /* --- Header & Nav --- */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1505571574718-4712435d883b?q=80&w=2070&auto=format&fit=crop') center/cover;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 { font-size: 3.5rem; letter-spacing: 5px; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; font-weight: 300; }
+
+        nav {
+            background: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--secondary-color); }
+
+        /* --- Common Layout --- */
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        section { margin-bottom: 80px; scroll-margin-top: 100px; }
+        h2 { 
+            text-align: center; 
+            font-size: 2rem; 
+            margin-bottom: 40px; 
+            color: var(--primary-color);
+            position: relative;
+        }
+        h2::after {
+            content: ""; display: block; width: 50px; height: 3px; 
+            background: var(--secondary-color); margin: 10px auto;
+        }
+
+        /* --- 基本資料 --- */
+        .info-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .info-table td { padding: 15px 25px; border-bottom: 1px solid #eee; }
+        .info-table td:first-child { background-color: #f9f4ef; font-weight: bold; width: 30%; color: var(--primary-color); }
+
+        /* --- 房型 & 岸上行程 Grid --- */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { margin-bottom: 10px; color: var(--primary-color); }
+
+        /* --- 餐廳 & 娛樂 List --- */
+        .feature-box { background: white; padding: 30px; border-radius: 12px; }
+        .feature-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+        .feature-item span { color: var(--secondary-color); font-size: 1.5rem; margin-right: 15px; }
+
+        /* --- QA --- */
+        .qa-container details { background: white; margin-bottom: 10px; border-radius: 5px; }
+        .qa-container summary { padding: 20px; font-weight: bold; cursor: pointer; color: var(--primary-color); }
+        .qa-container p { padding: 0 20px 20px; color: #666; }
+
+        footer { text-align: center; padding: 40px; background: #2C3E50; color: #bdc3c7; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            nav a { margin: 0 5px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>印象號郵輪</h1>
+    <p>Sea Stars Cruise | 醉美長江．星耀三峽</p>
+</header>
+
+<nav>
+    <a href="#basic">基本資料</a>
+    <a href="#rooms">房型介紹</a>
+    <a href="#dining">美饌餐廳</a>
+    <a href="#fun">船上娛樂</a>
+    <a href="#shore">岸上行程</a>
+    <a href="#schedule">上行行程</a>
+    <a href="#qa">常見問答</a>
+</nav>
+
+<div class="container">
+    
+    <section id="basic">
+        <h2>郵輪基本資料</h2>
+        <table class="info-table">
+            <tr><td>郵輪名稱</td><td>長江印象號 (Yangtze Impression / Sea Stars)</td></tr>
+            <tr><td>總噸位</td><td>8,040 噸</td></tr>
+            <tr><td>船體長度</td><td>126 公尺; 寬 17.2 公尺</td></tr>
+            <tr><td>載客量</td><td>306 人</td></tr>
+            <tr><td>首航年份</td><td>2005年首航; 2022年升級</td></tr>
+            <tr><td>主要航線</td><td>重慶 ↔ 宜昌 (四天三夜 / 五天四夜)</td></tr>
+            <tr><td>甲板層數</td><td>6</td></tr>
+        </table>
+    </section>
+
+    <section id="rooms">
+        <h2>尊榮房型</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Standard+Balcony" alt="豪華陽台房">
+                <div class="card-content">
+                    <h3>豪華陽台房</h3>
+                    <p>全船皆配置私人觀景陽台，讓您不用出門即可盡收三峽美景。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Executive+Suite" alt="行政套房">
+                <div class="card-content">
+                    <h3>行政套房</h3>
+                    <p>尊享高樓層視野，配備專屬管家服務與歡迎禮品。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Presidential+Suite" alt="總統套房">
+                <div class="card-content">
+                    <h3>總統套房</h3>
+                    <p>位於船頭最前段，擁有 270 度環繞落地窗，體驗極致奢華。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dining">
+        <h2>雲端美食餐飲</h2>
+        <div class="feature-box">
+            <div class="feature-item">
+                <span>🍽️</span>
+                <div>
+                    <strong>星耀大餐廳：</strong>
+                    <p>提供豐富的中西式自助早餐及晚餐，精選川、鄂、粵各地名菜。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span>☕</span>
+                <div>
+                    <strong>印象咖啡酒廊：</strong>
+                    <p>下午茶時光提供精緻點心與手沖咖啡，入夜後轉變為優雅的雞尾酒吧。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span>🍷</span>
+                <div>
+                    <strong>VIP 專屬餐廳：</strong>
+                    <p>為套房貴賓準備的私密用餐空間，提供主廚特製位上菜品。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fun">
+        <h2>船上娛樂設施</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>🎭 文化大講堂</h3>
+                    <p>特邀名家講述三峽歷史與詩詞文化。</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>🧘 頂層陽光甲板</h3>
+                    <p>全開放式活動空間，晨間設有太極教學。</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>🎥 印象影劇院</h3>
+                    <p>播放經典電影，晚間舉行別開生面的船員文藝表演。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shore">
+        <h2>精選岸上行程</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Fengdu" alt="豐都鬼城">
+                <div class="card-content">
+                    <h3>豐都鬼城</h3>
+                    <p>探尋東方神話傳說，感受獨特的「鬼文化」建築群。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Gorges+Dam" alt="三峽大壩">
+                <div class="card-content">
+                    <h3>三峽大壩</h3>
+                    <p>親睹世紀水利工程，體驗郵輪「升船機」的震撼過程。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Little+Three+Gorges" alt="神女溪">
+                <div class="card-content">
+                    <h3>神女溪換乘體驗</h3>
+                    <p>換乘小木船深入幽深峽谷，近距離觀察絕壁懸棺。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>上行行程</h2>
+        <div class="qa-container">
+            <details>
+                <summary>第一天行程</summary>
+                <br>12:30-13:30  宜昌東站集合
+                <br>13:30-17:30  乘車遊覽三峽大壩：【壇子嶺】+【185觀景平臺】，可自選體驗【升船機】（自費290元/人）
+                <br>18:00-19:30  晚餐（遊輪或陸地用餐）
+                <br>19:30-20:00  登船辦理入住
+                <br>20:00-20:30  船長歡迎酒會
+            </details>
+            <details>
+                <summary>第二天行程</summary>
+                <br>06:00-06:30  晨間咖啡
+                <br>06:00-07:30  自助早餐，船過巫峽
+                <br>08:00-11:00  換乘觀光船遊覽【小三峽】，可自選遊覽【小小三峽】（自費180元/人）
+                <br>12:30-13:30  自助午餐
+                <br>13:30-14:00  船過瞿塘峽
+                <br>15:00-18:00  船上自由活動或者自選遊覽【白帝城】（自費252元/人）
+                <br>18:00-19:30  自助晚宴
+            </details>
+            <details>
+                <summary>第三天行程</summary>
+                <br>06:30-07:00  晨間咖啡
+                <br>07:00-08:00  自助早餐
+                <br>08:30-10:00  上岸遊覽【石寶寨】
+                <br>10:30-11:00  享受船上慢時光
+                <br>12:30-13:30  自助午餐
+                <br>14:00-17:00  船上自由活動或自選遊覽【豐都鬼城】或【雪玉洞】（2選1，20人以上成團，自費220元/人）
+                <br>18:00-19:30  自助晚餐
+                <br>20:00-21:00  賓客同樂晚會
+            </details>
+            <details>
+                <summary>第四天行程</summary>
+                <br>06:30-07:30  辦理離船手續、結賬、交還房卡
+                <br>07:00-08:00  自助早餐
+                <br>08:00-09:00  離船，結束行程!
+            </details>
+
+			</div>
+    </section>
+
+
+    <section id="qa">
+        <h2>常見問答 Q&A</h2>
+        <div class="qa-container">
+            <details>
+                <summary>Q1：船上費用包含哪些？</summary>
+                <p>答：費用已包含航程期間的住宿、指定餐廳餐食、船上免費設施使用以及行程表列出的基本岸上景點門票。</p>
+            </details>
+            <details>
+                <summary>Q2：船上需要付小費嗎？</summary>
+                <p>答：印象號鼓勵優質服務。通常船公司會建議每位客人在行程結束前支付約 150-300 人民幣的服務費。</p>
+            </details>
+            <details>
+                <summary>Q3：手機訊號與 Wi-Fi 狀況如何？</summary>
+                <p>答：郵輪航行於長江沿岸，大部分航段皆有 4G/5G 訊號。船上公共區域也提供付費或套房免費的衛星 Wi-Fi。</p>
+            </details>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 長江三峽印象號郵輪 海洋之星版權所有</p>
+    <p>探索．發現．最美的長江</p>
+</footer>
+
+</body>
+</html>
