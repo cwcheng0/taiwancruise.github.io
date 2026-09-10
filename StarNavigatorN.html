@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 領航星號 (Star Navigator) - 基隆港出發 日韓郵輪假期首選</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --accent-gold: #D4AF37;
+            --light-bg: #F4F7F9;
+            --dark-text: #222222;
+            --card-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            color: var(--dark-text);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Top Header & Nav */
+        header {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .top-bar {
+            background-color: var(--primary-blue);
+            color: #fff;
+            padding: 6px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--accent-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .btn-book {
+            background-color: var(--accent-gold);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .btn-book:hover {
+            background-color: #b89628;
+        }
+
+        /* Hero Banner Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 51, 102, 0.4), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .hero-tags {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 6px 16px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+
+        /* Features Section */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .spec-item {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .spec-item i {
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .spec-item h4 {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .spec-item p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        /* Itinerary Cards */
+        .itinerary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent-gold);
+            color: #fff;
+            padding: 4px 12px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+
+        .card-body {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-body h3 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+        }
+
+        .route-info {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlights {
+            list-style: none;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #444;
+            flex-grow: 1;
+        }
+
+        .highlights li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .highlights li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .card-footer {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #d9534f;
+            font-weight: 700;
+        }
+
+        .price span {
+            font-size: 0.85rem;
+            color: #777;
+            font-weight: 400;
+        }
+
+        .btn-details {
+            border: 1px solid var(--primary-blue);
+            color: var(--primary-blue);
+            padding: 6px 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .btn-details:hover {
+            background: var(--primary-blue);
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: #a0b2c6;
+            padding: 50px 20px 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .footer-col p, .footer-col ul {
+            line-height: 1.8;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; } /* Simple responsive hide */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Topbar -->
+    <header>
+        <div class="top-bar">
+            <span><i class="fa-solid fa-anchor"></i> 2026 領航星號 (Star Navigator) 基隆母港專案</span>
+            <span><i class="fa-solid fa-phone"></i> 服務專線：(02) 2500-1234</span>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-ship"></i> 台灣郵輪網 TaiwanCruise
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">郵輪介紹</a></li>
+                <li><a href="#itineraries">2026航程總覽</a></li>
+                <li><a href="#tokyo-special">7晚東京限定</a></li>
+                <li><a href="#faq">搭乘須知</a></li>
+            </ul>
+            <a href="#itineraries" class="btn-book">立即預約</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>2026 領航星號 Star Navigator</h1>
+        <p>基隆母港出發 ‧ 探索日本與韓國最美海岸線</p>
+        <div class="hero-tags">
+            <span class="tag"><i class="fa-solid fa-location-dot"></i> 基隆港出發</span>
+            <span class="tag"><i class="fa-solid fa-plane-slash"></i> 免飛日韓 免搬行李</span>
+            <span class="tag"><i class="fa-solid fa-calendar-days"></i> 2026年2月 - 12月熱烈預約中</span>
+        </div>
+    </section>
+
+    <!-- Vessel Specs -->
+    <div class="container" id="about">
+        <div class="specs-grid">
+            <div class="spec-item">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <h4>總噸位</h4>
+                <p>75,338 噸</p>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-users"></i>
+                <h4>載客量</h4>
+                <p>1,856 人</p>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <h4>船隻總長</h4>
+                <p>268.8 公尺</p>
+            </div>
+            <div class="spec-item">
+                <i class="fa-solid fa-utensils"></i>
+                <h4>多元餐飲</h4>
+                <p>免費/特色餐廳</p>
+            </div>
+        </div>
+
+        <!-- Itineraries Section -->
+        <div class="section-title" id="itineraries">
+            <h2>2026 熱門精選航程</h2>
+            <p style="margin-top:10px; color:#666;">精心規劃 2 至 7 晚多元航線，滿足週末快閃與深度度假需求</p>
+        </div>
+
+        <div class="itinerary-grid">
+
+            <!-- Card 1: 7-Night Summer Flagship -->
+            <div class="card" id="tokyo-special">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">年度旗艦 ‧ 獨家一航次</span>
+                </div>
+                <div class="card-body">
+                    <h3>7晚 東京/大阪/高知/清水 深度遊</h3>
+                    <div class="route-info">
+                        <i class="fa-solid fa-route"></i> 基隆 → 高知 → 清水(富士山) → 東京(橫濱) → 大阪(和歌山) → 基隆
+                    </div>
+                    <ul class="highlights">
+                        <li>暑假黃金檔期限定（2026/08/02 出發）</li>
+                        <li>一次造訪日本本州四個經典大景點</li>
+                        <li>近距離遠眺富士山，暢遊東京與大阪商圈</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="price">NT$ 42,900 <span>起 / 人</span></div>
+                        <a href="#" class="btn-details">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: 5-Night Japan & Korea Combination -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">雙國暢遊</span>
+                </div>
+                <div class="card-body">
+                    <h3>5晚 韓國釜山/濟州 + 日本九州/沖繩</h3>
+                    <div class="route-info">
+                        <i class="fa-solid fa-route"></i> 基隆 → 釜山/濟州 → 長崎/鹿兒島 → 那霸 → 基隆
+                    </div>
+                    <ul class="highlights">
+                        <li>輕鬆一次玩轉日韓兩國精華港口</li>
+                        <li>品嚐釜山海鮮、鹿兒島黑豬肉與沖繩美食</li>
+                        <li>體驗結合火山地質與歷史文化的多元旅程</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="price">NT$ 26,900 <span>起 / 人</span></div>
+                        <a href="#" class="btn-details">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: 5-Night Kyushu & Okinawa -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">九州風情</span>
+                </div>
+                <div class="card-body">
+                    <h3>5晚 九州雙城 (福岡/長崎/熊本) + 沖繩</h3>
+                    <div class="route-info">
+                        <i class="fa-solid fa-route"></i> 基隆 → 熊本/鹿兒島 → 福岡/長崎 → 那霸 → 基隆
+                    </div>
+                    <ul class="highlights">
+                        <li>全新停靠美食之都「福岡」，購物拉麵首選</li>
+                        <li>漫步長崎歷史港灣與櫻島火山絕景</li>
+                        <li>結合南國沖繩度假氛圍</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="price">NT$ 24,900 <span>起 / 人</span></div>
+                        <a href="#" class="btn-details">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: 3/4-Night Okinawa Resort -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">熱門輕旅行</span>
+                </div>
+                <div class="card-body">
+                    <h3>3晚 / 4晚 沖繩自由行 (那霸/石垣島/宮古島)</h3>
+                    <div class="route-info">
+                        <i class="fa-solid fa-route"></i> 基隆 → 石垣島 / 宮古島 / 那霸 → 基隆
+                    </div>
+                    <ul class="highlights">
+                        <li>請假少、CP值極高的短程離島首選</li>
+                        <li>欣賞宮古藍海景與石垣島頂級和牛</li>
+                        <li>國際通免稅店血拼買夠夠</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="price">NT$ 13,900 <span>起 / 人</span></div>
+                        <a href="#" class="btn-details">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: 2-Night Weekend Cruise -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">週末快閃</span>
+                </div>
+                <div class="card-body">
+                    <h3>2晚 歡樂海洋假期 (歡樂週末/週五出發)</h3>
+                    <div class="route-info">
+                        <i class="fa-solid fa-route"></i> 基隆晚間 21:00 出發 → 海上巡航 → 週日下午返抵基隆
+                    </div>
+                    <ul class="highlights">
+                        <li>週五晚上輕鬆登船，無需排請假</li>
+                        <li>盡情享受船上歌舞秀、SPA與精緻美食</li>
+                        <li>週日下午返抵基隆，不影響週一上班</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="price">NT$ 8,900 <span>起 / 人</span></div>
+                        <a href="#" class="btn-details">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="faq">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>關於 台灣郵輪網 TaiwanCruise</h4>
+                <p>提供 2026 年最新「領航星號 Star Navigator」基隆母港出發之日韓航線預約服務與行程諮詢。為您帶來無與倫比的海上度假體驗。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="#about">領航星號介紹</a></li>
+                    <li><a href="#itineraries">日韓航線總覽</a></li>
+                    <li><a href="#tokyo-special">8/2 東京七晚特別航次</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>聯絡我們</h4>
+                <p><i class="fa-solid fa-phone"></i> 客服專線：02-2500-1234</p>
+                <p><i class="fa-solid fa-envelope"></i> 信箱：service@taiwancruise.com.tw</p>
+                <p><i class="fa-solid fa-location-dot"></i> 地址：台北市中山區南京東路...</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TaiwanCruise.com.tw. All Rights Reserved. 本網站為 2026 領航星號 (Star Navigator) 宣傳範本設計。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
