@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwan Cruise 台灣郵輪網 - 靠港與離港郵輪專家 | 波波旅行社</title>
+    <meta name="description" content="台灣靠港及離港郵輪專家，提供基隆港、高雄港出發之國際郵輪行程代訂、外國旅客台灣一日遊岸上觀光與Fly-Cruise海上假期服務。全方位專人諮詢：WhatsApp、電話或Email。">
+    <meta name="keywords" content="台灣郵輪, 基隆郵輪, 高雄郵輪, 郵輪岸上觀光, MSC榮耀號, 探索星號, 歌詩達莎倫娜號, 郵輪代訂, 波波旅行社">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taiwancruise.com.tw/">
+    <meta property="og:title" content="Taiwan Cruise 台灣郵輪網 - 靠港與離港郵輪專家 | 波波旅行社">
+    <meta property="og:description" content="波波旅行社為您精選全球頂級郵輪、台灣母港出發航線與專業入境岸上觀光一日遊。無繁雜表單，專人 WhatsApp / 電話 / Email 快速為您服務！">
+    <meta property="og:image" content="https://taiwancruise.com.tw/images/MSCBellissima_400x250.jpg">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --primary-navy: #0b2545;
+            --secondary-navy: #134074;
+            --accent-gold: #c59b27;
+            --accent-gold-hover: #b0881d;
+            --accent-cyan: #00b4d8;
+            --light-bg: #f8fafc;
+            --card-border: #e2e8f0;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --whatsapp-green: #25D366;
+            --whatsapp-dark: #1ebe5d;
+            --phone-blue: #0284c7;
+            --email-red: #ea4335;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .top-announcement {
+            background: linear-gradient(90deg, #07192f 0%, #0e305d 100%);
+            color: #e2e8f0;
+            font-size: 0.85rem;
+            padding: 7px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .top-announcement a {
+            color: #ffde7a;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .top-announcement a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .version-tag {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            padding: 2px 10px;
+            font-size: 0.78rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .version-tag a {
+            color: #ffde7a;
+            text-decoration: none;
+        }
+        .version-tag a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Navbar */
+        .navbar-main {
+            background-color: rgba(11, 37, 69, 0.98);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+            transition: all 0.3s ease;
+        }
+        .navbar-brand-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .brand-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #e8ba40 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-navy);
+            font-size: 1.4rem;
+            box-shadow: 0 4px 10px rgba(197, 155, 39, 0.3);
+        }
+        .brand-text h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 0;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+        .brand-text span {
+            font-size: 0.72rem;
+            color: #94a3b8;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .nav-link {
+            color: #e2e8f0 !important;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 8px 14px !important;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-gold) !important;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Dropdown Customization */
+        .dropdown-menu {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #0f2b48;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+            border-radius: 12px;
+            padding: 10px;
+            min-width: 290px;
+            animation: fadeIn 0.25s ease-out;
+        }
+        .dropdown-header-custom {
+            color: var(--accent-gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 12px 4px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 4px;
+        }
+        .dropdown-item {
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .dropdown-item:hover {
+            background-color: rgba(197, 155, 39, 0.15);
+            color: #ffde7a;
+            transform: translateX(4px);
+        }
+        .dropdown-item i {
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+        }
+
+        /* Nav Contact Button */
+        .btn-nav-inquiry {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #e0ab26 100%);
+            color: var(--primary-navy) !important;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 8px 18px;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(197, 155, 39, 0.35);
+            transition: all 0.25s ease;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            text-decoration: none;
+        }
+        .btn-nav-inquiry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(197, 155, 39, 0.5);
+            color: #07192f !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            background: linear-gradient(rgba(7, 25, 47, 0.72), rgba(11, 37, 69, 0.82)),
+                        url('https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=2000&auto=format&fit=crop') center center / cover no-repeat;
+            color: white;
+            padding: 120px 20px 140px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-gold);
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffde7a;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            text-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+            line-height: 1.15;
+        }
+        .hero-title .highlight-gold {
+            background: linear-gradient(135deg, #ffe082 0%, #ffc107 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            max-width: 760px;
+            margin: 0 auto 36px;
+            color: #e2e8f0;
+            font-weight: 300;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Hero Direct CTA Group */
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 35px;
+        }
+        .btn-hero-primary {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #e0ab26 100%);
+            color: var(--primary-navy);
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 14px 28px;
+            border-radius: 35px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(197, 155, 39, 0.4);
+            transition: all 0.25s ease;
+            border: none;
+        }
+        .btn-hero-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(197, 155, 39, 0.6);
+            color: #07192f;
+        }
+
+        .btn-hero-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 14px 26px;
+            border-radius: 35px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            transition: all 0.25s ease;
+        }
+        .btn-hero-whatsapp:hover {
+            background-color: var(--whatsapp-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+            color: #ffffff;
+        }
+
+        .btn-hero-phone {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 13px 26px;
+            border-radius: 35px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.25s ease;
+        }
+        .btn-hero-phone:hover {
+            background-color: #ffffff;
+            color: var(--primary-navy);
+            border-color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* Features Bar */
+        .features-ribbon {
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            margin-top: -65px;
+            position: relative;
+            z-index: 20;
+            padding: 25px 20px;
+            border: 1px solid var(--card-border);
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 15px;
+        }
+        .feature-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: #f0f7ff;
+            color: var(--secondary-navy);
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid #d0e3ff;
+        }
+        .feature-item h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 3px;
+            color: var(--primary-navy);
+        }
+        .feature-item p {
+            font-size: 0.85rem;
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Section Styling */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-tag {
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* DIRECT INQUIRY SHOWCASE (NO FORMS!) */
+        .inquiry-banner-card {
+            background: linear-gradient(135deg, #0b2545 0%, #134074 100%);
+            border-radius: 24px;
+            padding: 45px 35px;
+            color: white;
+            box-shadow: 0 20px 45px rgba(11, 37, 69, 0.2);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .inquiry-banner-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(197, 155, 39, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .inquiry-pill-badge {
+            background-color: rgba(197, 155, 39, 0.2);
+            color: #ffde7a;
+            border: 1px solid rgba(197, 155, 39, 0.4);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 5px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .inquiry-channel-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+            padding: 24px 20px;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        .inquiry-channel-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.14);
+            border-color: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+        .channel-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 16px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .channel-icon.whatsapp { background: var(--whatsapp-green); color: white; }
+        .channel-icon.phone { background: var(--phone-blue); color: white; }
+        .channel-icon.email { background: var(--email-red); color: white; }
+
+        .channel-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .channel-desc {
+            font-size: 0.88rem;
+            color: #cbd5e1;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .channel-action-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-action-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #ffffff;
+        }
+        .btn-action-whatsapp:hover {
+            background-color: var(--whatsapp-dark);
+            color: #ffffff;
+        }
+        .btn-action-phone {
+            background-color: #ffffff;
+            color: var(--primary-navy);
+        }
+        .btn-action-phone:hover {
+            background-color: #f1f5f9;
+            color: #07192f;
+        }
+        .btn-action-email {
+            background-color: var(--email-red);
+            color: #ffffff;
+        }
+        .btn-action-email:hover {
+            background-color: #d32f2f;
+            color: #ffffff;
+        }
+
+        /* Cruise Cards */
+        .cruise-card {
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .cruise-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 35px rgba(11, 37, 69, 0.12);
+            border-color: #cbd5e1;
+        }
+        .cruise-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            background: #e2e8f0;
+        }
+        .cruise-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .cruise-card:hover .cruise-img-wrapper img {
+            transform: scale(1.06);
+        }
+        .port-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(11, 37, 69, 0.88);
+            color: #ffffff;
+            backdrop-filter: blur(4px);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .status-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+        .cruise-body {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .cruise-ship-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .cruise-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+        .cruise-highlights {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        .cruise-highlights li {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .cruise-highlights li i {
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+        }
+        .btn-view-cruise {
+            background-color: #f1f5f9;
+            color: var(--primary-navy);
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .btn-view-cruise:hover {
+            background-color: var(--primary-navy);
+            color: #ffffff;
+        }
+
+        /* All Ships Directory Grid */
+        .fleet-directory-card {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 18px 20px;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .fleet-directory-card:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 8px 20px rgba(11, 37, 69, 0.08);
+            transform: translateX(4px);
+            color: var(--secondary-navy);
+        }
+        .ship-meta-title {
+            font-size: 1.02rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--primary-navy);
+        }
+        .ship-meta-sub {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        .ship-arrow-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-navy);
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+        .fleet-directory-card:hover .ship-arrow-icon {
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+        }
+
+        /* Offshore & Day Tours Section */
+        .offshore-section {
+            background-color: #f8fafc;
+            padding: 85px 0;
+            border-top: 1px solid var(--card-border);
+            border-bottom: 1px solid var(--card-border);
+        }
+        .tour-pill-item {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+            transition: all 0.2s ease;
+        }
+        .tour-pill-item:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+        }
+        .tour-badge {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-weight: 700;
+            font-size: 0.78rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .tour-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 4px;
+        }
+        .tour-spots {
+            font-size: 0.88rem;
+            color: #475569;
+            margin: 0;
+        }
+
+        /* Helpful Resources */
+        .resource-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            height: 100%;
+        }
+        .resource-box h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .resource-box ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+        .resource-box ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        .footer-main {
+            background-color: #07192f;
+            color: #94a3b8;
+            padding: 60px 0 30px;
+            border-top: 4px solid var(--accent-gold);
+            font-size: 0.9rem;
+        }
+        .footer-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 36px;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .footer-links a:hover {
+            color: #ffde7a;
+            transform: translateX(3px);
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 14px;
+            color: #cbd5e1;
+        }
+        .footer-contact-item i {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-top: 3px;
+        }
+        .footer-contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-contact-item a:hover {
+            color: var(--accent-gold);
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            margin-top: 45px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.82rem;
+            color: #64748b;
+        }
+
+        /* Floating Quick Action Dock */
+        .floating-action-dock {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-end;
+        }
+        .float-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 40px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .float-btn:hover {
+            transform: scale(1.06) translateY(-2px);
+            color: white;
+        }
+        .float-btn-whatsapp {
+            background-color: var(--whatsapp-green);
+        }
+        .float-btn-whatsapp:hover {
+            background-color: var(--whatsapp-dark);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+        }
+        .float-btn-phone {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+        }
+        .float-btn-phone:hover {
+            box-shadow: 0 10px 28px rgba(2, 132, 199, 0.45);
+        }
+        .float-btn-email {
+            background-color: var(--email-red);
+        }
+        .float-btn-email:hover {
+            box-shadow: 0 10px 28px rgba(234, 67, 53, 0.45);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 991px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .features-ribbon { margin-top: 20px; }
+            .floating-action-dock { bottom: 16px; right: 16px; }
+            .float-btn { border-radius: 50%; width: 50px; height: 50px; justify-content: center; padding: 0; }
+            .float-btn span { display: none; }
+            .float-btn i { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-shield-halved me-1 text-warning"></i>
+                <strong>波波旅行社有限公司</strong> · 交觀甲字第874400號 · 品保北字第27270001號 · 負責人 潘麗清
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="version-tag d-none d-lg-inline-flex">
+                    <span class="text-white-50">設計風格：</span>
+                    <strong class="text-warning">風格 1 (尊榮奢華藍金)</strong>
+                    <span class="text-white-50">|</span>
+                    <a href="index2.html">切換至風格 2 (現代極簡蔚藍) &raquo;</a>
+                </div>
+                <span><i class="fa-solid fa-phone me-1"></i> <a href="tel:+886227328732">02-2732-8732</a></span>
+                <span><i class="fa-brands fa-whatsapp me-1 text-success"></i> <a href="https://wa.me/886926466715" target="_blank">0926-466-715</a></span>
+                <span class="d-none d-md-inline"><i class="fa-solid fa-envelope me-1"></i> <a href="mailto:mike@taiwancruise.com.tw">mike@taiwancruise.com.tw</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-main">
+        <div class="container">
+            <a class="navbar-brand-wrapper" href="index.html">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-ship"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Taiwan Cruise</h1>
+                    <span>台灣郵輪專家 · 波波旅行社</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainContent" aria-controls="navbarMainContent" aria-expanded="false" aria-label="切換導航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁 Home</a>
+                    </li>
+
+                    <!-- Cruise Fleet Dropdown (Keeping ALL 15 ship links) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cruiseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            郵輪專家這裡進 <i class="fa-solid fa-angle-down ms-1 small"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cruiseDropdown">
+                            <div class="dropdown-header-custom"><i class="fa-solid fa-anchor me-1"></i> 台灣出發熱門旗艦</div>
+                            <li><a class="dropdown-item" href="MSCBellissima.html"><i class="fa-solid fa-compass"></i> MSC 榮耀號 MSC Bellissima</a></li>
+                            <li><a class="dropdown-item" href="SapphirePrincess.html"><i class="fa-solid fa-compass"></i> 藍寶石公主號 Sapphire Princess</a></li>
+                            <li><a class="dropdown-item" href="StarNavigator.html"><i class="fa-solid fa-compass"></i> 探索星號(南向) Star Navigator South</a></li>
+                            <li><a class="dropdown-item" href="StarNavigatorN.html"><i class="fa-solid fa-compass"></i> 探索星號(北向) Star Navigator North</a></li>
+                            <li><a class="dropdown-item" href="CostaSerena.html"><i class="fa-solid fa-compass"></i> 歌詩達莎倫娜號 Costa Serena</a></li>
+                            <li><a class="dropdown-item" href="ResortsWorldOne.html"><i class="fa-solid fa-compass"></i> 名勝郵輪壹號 Resorts World One</a></li>
+                            <li><a class="dropdown-item" href="ExplorerDream.html"><i class="fa-solid fa-compass"></i> 探索夢號 Explorer Dream</a></li>
+
+                            <div class="dropdown-header-custom mt-2"><i class="fa-solid fa-globe me-1"></i> 國際航線與奢華巡航</div>
+                            <li><a class="dropdown-item" href="SpectrumoftheSeas.html"><i class="fa-solid fa-compass"></i> 海洋光譜號 Spectrum of the Seas</a></li>
+                            <li><a class="dropdown-item" href="MSCPoesia.html"><i class="fa-solid fa-compass"></i> 詩歌號 MSC Poesia</a></li>
+                            <li><a class="dropdown-item" href="MitsuiOceanFuji.html"><i class="fa-solid fa-compass"></i> 三井海洋富士號 Mitsui Ocean Fuji</a></li>
+                            <li><a class="dropdown-item" href="NorwegianSun.html"><i class="fa-solid fa-compass"></i> 挪威郵輪太陽號 NCL Sun</a></li>
+                            <li><a class="dropdown-item" href="GrandPioneers.html"><i class="fa-solid fa-compass"></i> 豪華大先鋒號 Grand Pioneers</a></li>
+                            <li><a class="dropdown-item" href="Ponant.html"><i class="fa-solid fa-compass"></i> 龐洛郵輪 Ponant</a></li>
+                            <li><a class="dropdown-item" href="SeaStars.html"><i class="fa-solid fa-compass"></i> 海洋之星號 Stars of the Sea</a></li>
+                            <li><a class="dropdown-item" href="LongRiverImpression.html"><i class="fa-solid fa-compass"></i> 長江印象號 Impression</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">服務項目 Service</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="offshoreservice.html">岸上觀光 Offshore</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="knowledge.html">郵輪知識 Knowledge</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於我們 About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">聯絡我們 Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="#direct-inquiry" class="btn-nav-inquiry">
+                            <i class="fa-solid fa-headset"></i> 專人諮詢
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-water"></i> 台灣靠港及離港郵輪專家 · 專業一對一服務
+            </div>
+            <h2 class="hero-title">
+                Waves of <span class="highlight-gold">Wonders</span>
+            </h2>
+            <p class="hero-subtitle">
+                探索台灣母港出發的壯闊航程 · 外國旅客靠港一日遊專業接待 · Fly-Cruise 全球郵輪假期代訂
+            </p>
+
+            <!-- Direct Inquiries CTA Buttons (NO FORMS!) -->
+            <div class="hero-cta-group">
+                <a href="https://wa.me/886926466715?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%AB%AE%E8%A9%A2%E5%8F%B0%E7%81%A3%E9%83%B5%E8%BC%AA%E8%A1%8C%E7%A8%8B%20(Taiwan%20Cruise%20Inquiry)" target="_blank" class="btn-hero-whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i> WhatsApp 0926-466-715
+                </a>
+                <a href="tel:+886227328732" class="btn-hero-phone">
+                    <i class="fa-solid fa-phone"></i> 撥打電話 02-2732-8732
+                </a>
+                <a href="mailto:mike@taiwancruise.com.tw?subject=郵輪行程諮詢%20Taiwan%20Cruise%20Inquiry" class="btn-hero-primary">
+                    <i class="fa-solid fa-envelope"></i> Email 諮詢
+                </a>
+                <a href="service.html" class="btn-hero-primary" style="background: linear-gradient(135deg, #134074 0%, #0b2545 100%); color: #ffffff; border: 1px solid rgba(255,255,255,0.2);">
+                    <i class="fa-solid fa-compass"></i> 查看服務與行程
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Features Ribbon -->
+    <div class="container">
+        <div class="features-ribbon">
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <div>
+                            <h5>15+ 國際郵輪精選</h5>
+                            <p>地中海、公主、歌詩達、星夢等全球知名航線</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5>基隆 & 高雄 雙母港</h5>
+                            <p>台灣出發，直達日本、沖繩、菲律賓與越南</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-bus-simple"></i>
+                        </div>
+                        <div>
+                            <h5>外國靠港 岸上觀光</h5>
+                            <p>基隆/高雄港專車接待、台北101與故宮一日遊</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div>
+                            <h5>專人即時親切諮詢</h5>
+                            <p>免填表單，WhatsApp、電話與Email一鍵直達</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIRECT INQUIRIES SHOWCASE SECTION (NO FORMS!) -->
+    <section id="direct-inquiry" class="py-5 mt-4">
+        <div class="container">
+            <div class="inquiry-banner-card">
+                <div class="row align-items-center mb-4">
+                    <div class="col-lg-8">
+                        <span class="inquiry-pill-badge"><i class="fa-solid fa-headset me-1"></i> 即時一對一服務 · 免填繁瑣表單</span>
+                        <h3 class="display-6 fw-bold mb-2">需要行程規劃或價格諮詢嗎？</h3>
+                        <p class="text-light mb-0 fs-6">
+                            我們重視每位旅客的寶貴時間！<strong>無須在網頁上填寫任何表單</strong>，您可以直接選擇最習慣的方式與我們專人聯繫，我們將以最快速度提供您專屬的郵輪行程建議與報價。
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                        <span class="badge bg-warning text-dark px-3 py-2 fs-6">
+                            <i class="fa-solid fa-clock me-1"></i> 營業時間：週一至週五 09:00 - 18:00
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- WhatsApp Channel -->
+                    <div class="col-md-4">
+                        <div class="inquiry-channel-card">
+                            <div>
+                                <div class="channel-icon whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <h4 class="channel-title">WhatsApp 即時對話</h4>
+                                <p class="channel-desc">適合手機即時詢問、船艙空位查詢、行程報價與照片資料傳送。</p>
+                            </div>
+                            <div>
+                                <div class="text-white-50 small mb-2"><i class="fa-solid fa-mobile-screen-button me-1"></i> +886 926-466-715</div>
+                                <a href="https://wa.me/886926466715?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%AB%AE%E8%A9%A2%E5%8F%B0%E7%81%A3%E9%83%B5%E8%BC%AA%E8%A1%8C%E7%A8%8B%20(Taiwan%20Cruise%20Inquiry)" target="_blank" class="channel-action-btn btn-action-whatsapp">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> 立即 WhatsApp 交談
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telephone Channel -->
+                    <div class="col-md-4">
+                        <div class="inquiry-channel-card">
+                            <div>
+                                <div class="channel-icon phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <h4 class="channel-title">電話專線洽詢</h4>
+                                <p class="channel-desc">與專業旅遊顧問直接語音通話，詳細解答各航次細節與團體優惠方案。</p>
+                            </div>
+                            <div>
+                                <div class="text-white-50 small mb-2"><i class="fa-solid fa-phone-volume me-1"></i> 02-2732-8732</div>
+                                <a href="tel:+886227328732" class="channel-action-btn btn-action-phone">
+                                    <i class="fa-solid fa-phone me-1"></i> 立即致電專線諮詢
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Channel -->
+                    <div class="col-md-4">
+                        <div class="inquiry-channel-card">
+                            <div>
+                                <div class="channel-icon email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <h4 class="channel-title">電子郵件諮詢</h4>
+                                <p class="channel-desc">需客製化企業包船、公版代訂協議索取或詳細PDF手冊寄送。</p>
+                            </div>
+                            <div>
+                                <div class="text-white-50 small mb-2"><i class="fa-solid fa-at me-1"></i> mike@taiwancruise.com.tw</div>
+                                <a href="mailto:mike@taiwancruise.com.tw?subject=郵輪行程諮詢%20Taiwan%20Cruise%20Inquiry" class="channel-action-btn btn-action-email">
+                                    <i class="fa-solid fa-paper-plane me-1"></i> 發送 Email 來信
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 pt-3 border-top border-secondary text-center text-md-start">
+                    <div class="col-md-8 small text-light opacity-75">
+                        <i class="fa-solid fa-building me-1 text-warning"></i> 波波旅行社有限公司 · 台北市大安區和平東路2段217號2樓 · 傳真：02-2732-0045 (美國傳真：+1-425-675-1568)
+                    </div>
+                    <div class="col-md-4 text-md-end mt-2 mt-md-0 small">
+                        <a href="https://www.ey.gov.tw/Page/AABD2F12D8A6D561/090a1bbe-9bdb-4930-8a94-5ea7d404db62" target="_blank" class="text-warning text-decoration-none">
+                            <i class="fa-solid fa-file-contract me-1"></i> 行政院郵輪公版代訂協議
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR CRUISES SECTION -->
+    <section id="popular-destinations" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Cruises</span>
+                <h3 class="section-title">熱門母港精選郵輪</h3>
+                <p class="section-subtitle">
+                    精選基隆與高雄港啟航的熱門旗艦，帶您領略星級美食、世界級娛樂表演與蔚藍海景。
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1: Star Navigator -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="cruise-card">
+                        <div class="cruise-img-wrapper">
+                            <img src="images/StarNevigator_400x250.jpg" alt="麗星郵輪 探索星號 Star Navigator" onerror="this.src='https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=600&auto=format&fit=crop'">
+                            <span class="port-badge"><i class="fa-solid fa-anchor"></i> 高雄港 / 基隆出發</span>
+                            <span class="status-badge">熱門航次</span>
+                        </div>
+                        <div class="cruise-body">
+                            <h4 class="cruise-ship-name">麗星郵輪 探索星號</h4>
+                            <p class="cruise-desc">
+                                從高雄港啟航，前進菲律賓佬沃、科隆島、公主港、長灘島及越南下龍灣、峴港，體驗熱情海島與地道亞洲美饌。
+                            </p>
+                            <ul class="cruise-highlights">
+                                <li><i class="fa-solid fa-check-circle"></i> 絲路花舞中餐廳、海馬日式料理</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 星座劇場大型歌舞秀、羅馬泳池滑水梯</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 提供南向與北向雙重精采航線選擇</li>
+                            </ul>
+                            <div class="d-flex gap-2">
+                                <a href="StarNavigator.html" class="btn-view-cruise flex-grow-1">
+                                    <i class="fa-solid fa-circle-info"></i> 查看探索星號(南向)
+                                </a>
+                                <a href="StarNavigatorN.html" class="btn-view-cruise flex-grow-1">
+                                    探索星號(北向)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: MSC Bellissima -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="cruise-card">
+                        <div class="cruise-img-wrapper">
+                            <img src="images/MSCBellissima_400x250.jpg" alt="MSC 榮耀號 MSC Bellissima" onerror="this.src='https://images.unsplash.com/photo-1590842322969-e0b4a45a6a9b?q=80&w=600&auto=format&fit=crop'">
+                            <span class="port-badge"><i class="fa-solid fa-anchor"></i> 基隆港出發</span>
+                            <span class="status-badge">亞洲旗艦</span>
+                        </div>
+                        <div class="cruise-body">
+                            <h4 class="cruise-ship-name">MSC 榮耀號 Bellissima</h4>
+                            <p class="cruise-desc">
+                                17.1萬噸亞洲旗艦，80米長LED天幕長廊與施華洛世奇水晶旋梯，帶您奢享至高無上的歐式海上假期。
+                            </p>
+                            <ul class="cruise-highlights">
+                                <li><i class="fa-solid fa-check-circle"></i> 33種精緻餐飲體驗、海渡鐵板燒與牛排屋</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 倫敦大劇院世界級歌舞特技、亞利桑那水上樂園</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 船中船「地中海遊艇會」24小時管家服務</li>
+                            </ul>
+                            <a href="MSCBellissima.html" class="btn-view-cruise mt-auto">
+                                <i class="fa-solid fa-circle-info"></i> 查看 MSC 榮耀號詳情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Costa Serena -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="cruise-card">
+                        <div class="cruise-img-wrapper">
+                            <img src="images/CostaSerina_400x250.jpg" alt="歌詩達郵輪 莎倫娜號 Costa Serena" onerror="this.src='https://images.unsplash.com/photo-1516733978542-f28c2c78a0f5?q=80&w=600&auto=format&fit=crop'">
+                            <span class="port-badge"><i class="fa-solid fa-anchor"></i> 基隆港出發</span>
+                            <span class="status-badge">義大利風情</span>
+                        </div>
+                        <div class="cruise-body">
+                            <h4 class="cruise-ship-name">歌詩達郵輪 莎倫娜號</h4>
+                            <p class="cruise-desc">
+                                滿載古羅馬與希臘神話藝術的眾神之船，熱情奔放的義大利嘉年華、金色大廳與經典意式料理。
+                            </p>
+                            <ul class="cruise-highlights">
+                                <li><i class="fa-solid fa-check-circle"></i> 羅馬萬神殿風格中庭、宙斯大劇院</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 正宗拿坡里手工披薩、Samsara 水療中心</li>
+                                <li><i class="fa-solid fa-check-circle"></i> 日本沖繩、石垣島、宮古島超人氣航次</li>
+                            </ul>
+                            <a href="CostaSerena.html" class="btn-view-cruise mt-auto">
+                                <i class="fa-solid fa-circle-info"></i> 查看莎倫娜號詳情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLETE FLEET DIRECTORY (PRESERVING ALL 15 LINKS) -->
+    <section id="fleet-directory" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">All Ships & Routes</span>
+                <h3 class="section-title">全航線所有郵輪專區</h3>
+                <p class="section-subtitle">
+                    無論您計畫從台灣港口出發、飛往海外搭乘頂級奢華郵輪，或是探索內陸河輪，我們皆提供專業航程代訂。
+                </p>
+            </div>
+
+            <div class="row g-3">
+                <!-- 1. MSC Bellissima -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="MSCBellissima.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">MSC 榮耀號</div>
+                            <div class="ship-meta-sub">MSC Bellissima · 17.1萬噸基隆出發旗艦</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 2. Sapphire Princess -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="SapphirePrincess.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">藍寶石公主號</div>
+                            <div class="ship-meta-sub">Sapphire Princess · 公主郵輪星空影院</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 3. Star Navigator South -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="StarNavigator.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">探索星號 (南向航線)</div>
+                            <div class="ship-meta-sub">Star Navigator South · 高雄啟航前進菲越</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 4. Star Navigator North -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="StarNavigatorN.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">探索星號 (北向航線)</div>
+                            <div class="ship-meta-sub">Star Navigator North · 豐富亞洲美食巡航</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 5. Costa Serena -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="CostaSerena.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">歌詩達莎倫娜號</div>
+                            <div class="ship-meta-sub">Costa Serena · 古羅馬神話義式狂歡</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 6. Spectrum of the Seas -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="SpectrumoftheSeas.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">海洋光譜號</div>
+                            <div class="ship-meta-sub">Spectrum of the Seas · 皇家加勒比超量子級</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 7. MSC Poesia -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="MSCPoesia.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">詩歌號</div>
+                            <div class="ship-meta-sub">MSC Poesia · 典雅詩意地中海航海美學</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 8. Mitsui Ocean Fuji -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="MitsuiOceanFuji.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">三井海洋富士號</div>
+                            <div class="ship-meta-sub">Mitsui Ocean Fuji · 精緻頂級日式款待禮遇</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 9. Norwegian Sun -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="NorwegianSun.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">挪威郵輪太陽號</div>
+                            <div class="ship-meta-sub">NCL Sun · 自由閒逸 Freestyle Cruising</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 10. Grand Pioneers -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="GrandPioneers.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">豪華大先鋒號</div>
+                            <div class="ship-meta-sub">Grand Pioneers · 下龍灣奢華全套房巡禮</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 11. Ponant -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="Ponant.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">龐洛郵輪</div>
+                            <div class="ship-meta-sub">Ponant · 法國頂級精品極地探險</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 12. Stars of the Sea -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="SeaStars.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">海洋之星號</div>
+                            <div class="ship-meta-sub">Stars of the Sea · 頂級私享管家海上假期</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 13. Long River Impression -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="LongRiverImpression.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">長江印象號</div>
+                            <div class="ship-meta-sub">Impression · 壯麗長江三峽文化景觀巡航</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 14. Resorts World One -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="ResortsWorldOne.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">名勝郵輪壹號</div>
+                            <div class="ship-meta-sub">Resorts World One · 香港/高雄雙母港美饌體驗</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+
+                <!-- 15. Explorer Dream -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="ExplorerDream.html" class="fleet-directory-card">
+                        <div>
+                            <div class="ship-meta-title">探索夢號</div>
+                            <div class="ship-meta-sub">Explorer Dream · 皇宮貴賓禮遇與島嶼探索</div>
+                        </div>
+                        <div class="ship-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INBOUND & OFFSHORE SHORE EXCURSIONS -->
+    <section id="offshore-tours" class="offshore-section">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <span class="section-tag">Inbound Shore Excursions</span>
+                    <h3 class="section-title">外國靠港遊客 · 台灣一日遊岸上觀光服務</h3>
+                    <p class="section-subtitle ms-0">
+                        依據台灣旅遊法規，波波旅行社專為搭乘國際郵輪造訪基隆港及高雄港之外國旅客，提供優質的私人包車與專業外語一日遊導覽服務。
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="service.html" class="btn btn-primary px-4 py-2 me-2">服務總覽 Service</a>
+                    <a href="offshoreservice.html" class="btn btn-outline-primary px-4 py-2">岸上服務詳情</a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="tour-pill-item">
+                        <span class="tour-badge">行程一 · 經典歷史地標</span>
+                        <div class="tour-name">台北101 + 國民革命忠烈祠 + 國立故宮博物院</div>
+                        <p class="tour-spots">Taipei 101, National Revolutionary Martyrs' Shrine, National Palace Museum</p>
+                    </div>
+
+                    <div class="tour-pill-item">
+                        <span class="tour-badge">行程二 · 傳統文化與老街老店</span>
+                        <div class="tour-name">保安宮 + 孔廟 + 迪化街 + 永樂市場 + 霞海城隍廟 + 圓山大飯店</div>
+                        <p class="tour-spots">Baoan Temple, Confucius Temple, Dihua Street, YuanLe Market, Xiahai City God Temple, The Grand Hotel</p>
+                    </div>
+
+                    <div class="tour-pill-item">
+                        <span class="tour-badge">行程三 · 都會地標與信仰巡禮</span>
+                        <div class="tour-name">台北101 + 萬華龍山寺 深度一日遊</div>
+                        <p class="tour-spots">Taipei 101 observatory deck and historical Longshan Temple</p>
+                    </div>
+
+                    <div class="tour-pill-item">
+                        <span class="tour-badge">行程四 · 山城浪漫漫步</span>
+                        <div class="tour-name">九份黃金山城 + 老街茶坊體驗</div>
+                        <p class="tour-spots">Chiufen (Jiufen mountain village, traditional tea houses, and scenic coastal views)</p>
+                    </div>
+
+                    <div class="tour-pill-item">
+                        <span class="tour-badge">行程五 · 世界級奇岩地貌</span>
+                        <div class="tour-name">野柳地質公園 女王頭奇岩探索</div>
+                        <p class="tour-spots">Yeliu Geo Park (Queen's Head and otherworldly sandstone rock formations)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="resource-box">
+                        <h4><i class="fa-solid fa-passport text-primary"></i> 旅客必備實用指引</h4>
+                        <p class="text-muted small">為方便各國郵輪旅客順利入境與觀光，波波旅行社提供以下便捷服務與官方登記指引：</p>
+                        
+                        <div class="p-3 mb-3 bg-light rounded-3 border">
+                            <strong class="d-block text-navy mb-1"><i class="fa-solid fa-money-bill-wave text-success me-1"></i> 多幣別收款便捷服務</strong>
+                            <span class="small text-muted">為方便外國遊客，我們接受新台幣、美金與歐元 (We accept USD, Euro and TWD)。</span>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="https://twac.immigration.gov.tw/" target="_blank" class="fw-bold text-decoration-none text-primary">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> 台灣入境卡申請 (TWAC - Taiwan Arrival Card)
+                                </a>
+                                <div class="small text-muted">外國旅客靠港前請預先於移民署系統填妥電子入境卡。</div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="https://ocean.cwa.gov.tw/V2/" target="_blank" class="fw-bold text-decoration-none text-primary">
+                                    <i class="fa-solid fa-water me-1"></i> 台灣即時海象資訊 (CWA Ocean Info)
+                                </a>
+                                <div class="small text-muted">掌握即時海流、風浪與港口天候狀況。</div>
+                            </li>
+                            <li class="mb-2">
+                                <a href="knowledge.html" class="fw-bold text-decoration-none text-primary">
+                                    <i class="fa-solid fa-book-open-reader me-1"></i> 2025-2026 郵輪知識庫 (Cruise Knowledge)
+                                </a>
+                                <div class="small text-muted">包含各類客艙、救生演習常識 (7長1短) 與中英常用術語對照。</div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4 p-3 rounded-3" style="background-color: #fff9e6; border: 1px dashed #ffd166;">
+                            <div class="small fw-bold text-dark mb-1">
+                                <i class="fa-solid fa-bell text-warning me-1"></i> 岸上行程客製預約
+                            </div>
+                            <div class="small text-muted">
+                                若您需要預訂岸上觀光行程，歡迎直接透過 <a href="https://wa.me/886926466715" class="text-success fw-bold">WhatsApp</a>、<a href="tel:+886227328732" class="text-primary fw-bold">電話</a> 或 <a href="mailto:mike@taiwancruise.com.tw" class="text-danger fw-bold">Email</a> 聯繫我們！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (LEGAL & ALL LINKS PRESERVED) -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Col 1: Brand & Agency Intro -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">波波旅行社有限公司</h5>
+                    <p class="small text-light opacity-75">
+                        波波旅行社為台灣合法立案甲種旅行社，長期深耕郵輪旅遊、Fly-Cruise 海外航程與基隆/高雄港外國旅客入境一日遊服務。
+                    </p>
+                    <div class="small text-light opacity-75">
+                        <div><strong>交通部觀光署登記：</strong>交觀甲字第874400號</div>
+                        <div><strong>品質保證協會認證：</strong>品保北字第27270001號</div>
+                        <div><strong>公司負責人：</strong>潘麗清</div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">站內導覽</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> 首頁 (Home)</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> 關於我們 (About Us)</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> 聯絡我們 (Contact)</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> 服務項目 (Service)</a></li>
+                        <li><a href="offshoreservice.html"><i class="fa-solid fa-angle-right"></i> 岸上服務 (Offshore)</a></li>
+                        <li><a href="knowledge.html"><i class="fa-solid fa-angle-right"></i> 郵輪知識 (Knowledge)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Cruise Ships Directory -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">熱門郵輪航次</h5>
+                    <ul class="footer-links">
+                        <li><a href="MSCBellissima.html"><i class="fa-solid fa-ship"></i> MSC 榮耀號</a></li>
+                        <li><a href="StarNavigator.html"><i class="fa-solid fa-ship"></i> 探索星號(南向)</a></li>
+                        <li><a href="StarNavigatorN.html"><i class="fa-solid fa-ship"></i> 探索星號(北向)</a></li>
+                        <li><a href="CostaSerena.html"><i class="fa-solid fa-ship"></i> 歌詩達莎倫娜號</a></li>
+                        <li><a href="SapphirePrincess.html"><i class="fa-solid fa-ship"></i> 藍寶石公主號</a></li>
+                        <li><a href="SpectrumoftheSeas.html"><i class="fa-solid fa-ship"></i> 海洋光譜號</a></li>
+                        <li><a href="ResortsWorldOne.html"><i class="fa-solid fa-ship"></i> 名勝郵輪壹號</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Direct Inquiries Contact (NO FORM!) -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">專人一對一諮詢</h5>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp text-success"></i>
+                        <div>
+                            <div class="small text-muted">WhatsApp 即時通訊：</div>
+                            <a href="https://wa.me/886926466715" target="_blank" class="fw-bold text-success">+886 926-466-715</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <div class="small text-muted">服務電話：</div>
+                            <a href="tel:+886227328732" class="fw-bold">02-2732-8732</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <div class="small text-muted">電子信箱：</div>
+                            <a href="mailto:mike@taiwancruise.com.tw">mike@taiwancruise.com.tw</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-fax"></i>
+                        <div class="small">
+                            傳真：02-2732-0045<br>美國傳真：+1-425-675-1568
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="small">
+                            106033 臺北市大安區和平東路2段217號2樓
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Compliance -->
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+                <div>
+                    &copy; 2026 波波旅行社有限公司 Taiwan Cruise. 版權所有 All Rights Reserved.
+                </div>
+                <div class="mt-2 mt-md-0">
+                    <a href="https://www.ey.gov.tw/Page/AABD2F12D8A6D561/090a1bbe-9bdb-4930-8a94-5ea7d404db62" target="_blank" class="text-muted text-decoration-none me-3">
+                        <i class="fa-solid fa-file-contract me-1"></i> 行政院郵輪公版代訂協議
+                    </a>
+                    <a href="contact.html" class="text-muted text-decoration-none me-3">聯絡諮詢</a>
+                    <a href="about.html" class="text-muted text-decoration-none">關於我們</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Action Dock (1-tap WhatsApp, Phone, Email) -->
+    <div class="floating-action-dock">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/886926466715?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%AB%AE%E8%A9%A2%E5%8F%B0%E7%81%A3%E9%83%B5%E8%BC%AA%E8%A1%8C%E7%A8%8B%20(Taiwan%20Cruise%20Inquiry)" target="_blank" class="float-btn float-btn-whatsapp" title="WhatsApp 快速諮詢">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp 0926-466-715</span>
+        </a>
+
+        <!-- Telephone -->
+        <a href="tel:+886227328732" class="float-btn float-btn-phone" title="致電諮詢">
+            <i class="fa-solid fa-phone"></i>
+            <span>02-2732-8732</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:mike@taiwancruise.com.tw?subject=郵輪行程諮詢%20Taiwan%20Cruise%20Inquiry" class="float-btn float-btn-email" title="發送 Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email 諮詢</span>
+        </a>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
